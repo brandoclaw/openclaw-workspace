@@ -10,7 +10,13 @@ _Learn about the person you're helping. Update this as you go._
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- Director of Product at a golf course management software company
+- Leads a team of 8 product managers
+- Responsible for product strategy
+- Day-to-day is heavy on meetings, async comms, admin, politics, and people management
+- Team uses JIRA for roadmapping
+- Competitive market; business is ~$70M in revenue
+- The management overhead is the pain — wants more time for actual product thinking
 
 ---
 
