@@ -5,7 +5,7 @@ _Learn about the person you're helping. Update this as you go._
 - **Name:** Brando
 - **What to call them:** Brando
 - **Pronouns:** _(optional)_
-- **Timezone:**
+- **Timezone:** America/Toronto (EST)
 - **Notes:**
 
 ## Context
