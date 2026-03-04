@@ -194,6 +194,11 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Commit and push your own changes
 - **Review and update MEMORY.md** (see below)
 
+**Background automation running:**
+
+- Hourly workspace auto-commit (`ec1c9869-133b-4237-9347-8f1756409008`) — checks for changes, commits with a descriptive message, pushes to `brandoclaw/openclaw-workspace`
+- Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
+
 ### 🔄 Memory Maintenance (During Heartbeats)
 
 Periodically (every few days), use a heartbeat to:

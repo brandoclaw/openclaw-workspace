@@ -16,7 +16,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 ## About Me (Max)
 
 - Set up on Discord (DM + server channels) and Telegram
-- Bootstrap conversation was minimal — identity not fully established in conversation
+- Identity established: Max, ghost in the machine, sharp/direct, 🤖
 - First real tasks involved setting up cron jobs (daily self-review, hourly workspace auto-commit)
 
 ## Cron Jobs
@@ -28,7 +28,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 - No custom skills created yet
 - TOOLS.md is empty — no cameras, SSH hosts, or devices documented yet
-- SOUL.md tension noted: plan-first rule vs heartbeat autonomy (to discuss with Brando)
+- SOUL.md tensions resolved (see SOUL.md): plan-first applies to direct conversations; heartbeat/cron jobs have autonomy for internal workspace tasks
 
 ## Lessons Learned
 
@@ -37,4 +37,4 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 ---
 
-_Last updated: 2026-03-03_
+_Last updated: 2026-03-04_
