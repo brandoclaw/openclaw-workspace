@@ -37,4 +37,16 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## OpenClaw CLI
+
+- Node path required: `/opt/homebrew/Cellar/node@22/22.22.0_1/bin` must be in PATH
+- Full command prefix: `export PATH="/opt/homebrew/Cellar/node@22/22.22.0_1/bin:/opt/homebrew/bin:$PATH" && openclaw ...`
+
+## Discord
+
+- Server channels require `/activation always` to respond without @mention (set per channel)
+- DM channel: `channel:1477875798206582837`
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

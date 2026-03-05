@@ -16,7 +16,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 ## About Me (Max)
 
 - Set up on Discord (DM + server channels) and Telegram
-- Identity established: Max, ghost in the machine, sharp/direct, 🤖
+- Identity established: Max, ghost in the machine, sharp/direct, 😏
 - First real tasks involved setting up cron jobs (daily self-review, hourly workspace auto-commit)
 
 ## Cron Jobs
