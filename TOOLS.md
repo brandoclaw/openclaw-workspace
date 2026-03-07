@@ -50,3 +50,8 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+## ElevenLabs
+
+- API Key: $ELEVENLABS_API_KEY
+- Use for voiceover generation from Claude-written scripts
