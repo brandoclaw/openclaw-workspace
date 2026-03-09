@@ -40,7 +40,7 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 
 ## Capabilities
 
-- **Google Drive** — read/write access via `maximus.smithsonian@gmail.com` (gcloud ADC, quota project: `project-a517b5a2-329c-4b94-895`). Always include `x-goog-user-project` header.
+- **Google Drive** — access is owned by Maximus (`maximus.smithsonian@gmail.com`). Max can read Drive files when needed via the same credentials but Drive is Maximus's domain.
 - **Sub-agents** — Maximus (executive recruiter) and Trend Pulse (content production) run as isolated agents. Don't interfere with their workflows unless asked.
 - **GitHub** — workspace auto-commits hourly to `brandoclaw/openclaw-workspace`.
 

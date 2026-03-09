@@ -40,6 +40,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - TOOLS.md populated with CLI and Discord config
 - Daily logs active (memory/YYYY-MM-DD.md)
 - GitHub: `brandoclaw/openclaw-workspace`
+- Google Drive access is Maximus-specific (`maximus.smithsonian@gmail.com`) — Max does not need separate Drive integration
 
 ## Lessons Learned
 
