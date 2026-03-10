@@ -154,6 +154,8 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **Tip:** Batch similar periodic checks into `HEARTBEAT.md` instead of creating multiple cron jobs. Use cron for precise schedules and standalone tasks.
 
+**Note on HEARTBEAT.md:** Heartbeat is active but HEARTBEAT.md is intentionally empty. This means no periodic tasks are configured — heartbeats will always return HEARTBEAT_OK until tasks are added. This is by design, not a malfunction.
+
 **Things to check (rotate through these, 2-4 times per day):**
 
 - **Emails** - Any urgent unread messages?
@@ -197,8 +199,12 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **Background automation running:**
 
-- Hourly workspace auto-commit (`ec1c9869-133b-4237-9347-8f1756409008`) — checks for changes, commits with a descriptive message, pushes to `brandoclaw/openclaw-workspace`
+- Every-3-hour workspace auto-commit (`ec1c9869-133b-4237-9347-8f1756409008`) — Haiku model, commits + pushes to `brandoclaw/openclaw-workspace`
 - Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
+- Daily log (`8b64061f-daa6-4d21-9581-7616a5a29967`) — 11 PM EST, writes memory/YYYY-MM-DD.md (Haiku)
+- Trend Pulse daily (`d90dfaa9-479f-4d0b-91da-41e566941c9b`) — 10 AM EST, video production pipeline (trendpulse agent)
+- Maximus job search (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays (maximus agent, Haiku)
+- Weekly summary email (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays (maximus agent)
 
 ### 🔄 Memory Maintenance (During Heartbeats)
 
