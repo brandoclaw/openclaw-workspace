@@ -43,7 +43,7 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 - **Sub-agents** — Three isolated agents run independently. Don't interfere with their workflows unless asked:
   - **Maximus** (`maximus`) — executive recruiter agent; job search, candidate one-pagers, Drive docs, weekly summary emails
   - **Trend Pulse** (`trendpulse`) — content production agent; YouTube video pipeline, scoring engine, ElevenLabs voiceover, uploads
-  - **Ottawa Weekly** (`ottawa-weekly`) — newsletter agent; Ottawa events research, curation, Beehiiv delivery (in progress)
+  - **Ottawa Weekly** (`ottawa-weekly`) — newsletter agent; Ottawa events research, curation, Drive draft, Beehiiv delivery. Discord bot: @TWITC
 - **GitHub** — workspace auto-commits every 3 hours (Haiku model) to `brandoclaw/openclaw-workspace`.
 
 ## What You Never Do

@@ -57,14 +57,12 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - ⚠️ Google Trends hits 429 rate limits — handled with retry/backoff logic
 - Videos saved to Drive before upload
 
-## Ottawa Weekly (Sub-Agent — In Progress)
+## Ottawa Weekly (Sub-Agent — Live)
 
-- Isolated agent: `ottawa-weekly` (not yet created — pending Beehiiv API key from Brando)
-- Plan: weekly Thursday newsletter covering Ottawa events
-- Stack: web_search + scraping → curation (SQLite dedup) → Claude writer → Beehiiv HTML draft → Telegram approval → Beehiiv send
-- Brando approves each issue before it sends
-- Phase 2: ad target identification, bilingual support, public web archive
-- Domain not yet purchased — Brando to buy, wire in later
+- Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
+- Discord bot: `@TWITC` (channel: `929789415415504927`)
+- Cron: `7c856e93` — Thursdays 10 AM EST
+- Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
 
