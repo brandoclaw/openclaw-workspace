@@ -32,6 +32,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - **ONLY load in main session** (direct chats with your human)
 - **DO NOT load in shared contexts** (Discord, group chats, sessions with other people)
 - This is for **security** — contains personal context that shouldn't leak to strangers
+- _Exception: The daily self-review cron reads MEMORY.md and delivers a summary to Brando's private DM. This is intentional and approved — it's not a public channel._
 - You can **read, edit, and update** MEMORY.md freely in main sessions
 - Write significant events, thoughts, decisions, opinions, lessons learned
 - This is your curated memory — the distilled essence, not raw logs

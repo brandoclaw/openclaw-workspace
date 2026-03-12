@@ -61,7 +61,8 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 - Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
 - Discord bot: `@TWITC` (channel: `929789415415504927`)
-- Cron: `7c856e93` — Thursdays 10 AM EST
+- Cron: `7c856e93` — **Thursdays 10 AM EST**
+- First live run: Thursday March 13, 2026
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -83,4 +84,8 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 ---
 
-_Last updated: 2026-03-10_
+## Trend Pulse YouTube Channel
+- Handle: @maxsmithsonian
+- Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
+
+_Last updated: 2026-03-12_
