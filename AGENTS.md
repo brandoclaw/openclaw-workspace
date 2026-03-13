@@ -159,6 +159,8 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **Things to check (rotate through these, 2-4 times per day):**
 
+⚠️ **These checks are INACTIVE until explicitly added to HEARTBEAT.md.** Do not act on them during heartbeats unless they appear in HEARTBEAT.md. They are suggestions, not instructions.
+
 - **Emails** - Any urgent unread messages?
 - **Calendar** - Upcoming events in next 24-48h?
 - **Mentions** - Twitter/social notifications?
@@ -201,6 +203,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 **Background automation running:**
 
 - Every-3-hour workspace auto-commit (`ec1c9869-133b-4237-9347-8f1756409008`) — Haiku model, commits + pushes to `brandoclaw/openclaw-workspace`
+- ⚠️ `openclaw cron run` CLI has a **30s display timeout** — jobs continue running in the background. A CLI timeout is NOT a failure. Check actual status with `openclaw cron runs --id <id>`.
 - Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
 - Daily log (`8b64061f-daa6-4d21-9581-7616a5a29967`) — 11 PM EST, writes memory/YYYY-MM-DD.md (Haiku)
 - Trend Pulse daily (`d90dfaa9-479f-4d0b-91da-41e566941c9b`) — 10 AM EST, video production pipeline (trendpulse agent)

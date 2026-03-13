@@ -29,7 +29,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | Sonnet |
 | 10 AM daily | Trend Pulse Daily | `d90dfaa9-479f-4d0b-91da-41e566941c9b` | trendpulse | Sonnet |
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
-| 9 PM Mondays | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
+| 9 PM **Mondays only** | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
 
 ## Maximus (Sub-Agent)
@@ -72,6 +72,12 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Daily logs active (memory/YYYY-MM-DD.md)
 - GitHub: `brandoclaw/openclaw-workspace`
 - Google Drive access is Maximus-specific (`maximus.smithsonian@gmail.com`) — Max does not need separate Drive integration
+
+## Known Limitations
+
+- **memory_search unavailable** — OpenAI embeddings quota exhausted. Fallback: manually read MEMORY.md + recent memory/YYYY-MM-DD.md files directly.
+- **`write` tool sandbox** — sandboxed to `~/.openclaw/workspace` only. For other agent workspaces, use `exec` with heredocs (`cat > file << 'EOF'`).
+- **`openclaw cron run` CLI** — has a 30s display timeout; jobs continue running in background. A timeout message from the CLI is NOT a failure indicator — check `openclaw cron runs --id <id>` to verify actual status.
 
 ## Lessons Learned
 

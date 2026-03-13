@@ -55,3 +55,31 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 - API Key: $ELEVENLABS_API_KEY
 - Use for voiceover generation from Claude-written scripts
+
+---
+
+## Known Limitations
+
+- **`write` tool sandbox** — restricted to `~/.openclaw/workspace/` only. Writing to other agent workspaces (workspace-maximus, workspace-trendpulse, workspace-ottawa-weekly) requires `exec` with heredocs: `cat > ~/.openclaw/workspace-X/file << 'EOF'`
+- **`openclaw cron run` CLI** — 30s display timeout; job continues in background. CLI timeout ≠ job failure. Always verify with `openclaw cron runs --id <id>`.
+- **memory_search** — OpenAI embeddings quota exhausted. Fallback: read MEMORY.md + memory/YYYY-MM-DD.md directly.
+
+---
+
+## Active Integrations
+
+Skills/tools currently in active use:
+
+| Tool | Purpose |
+|------|---------|
+| Discord | Primary chat surface (Max + Maximus + @TWITC bots) |
+| Telegram | Secondary surface (Max + Maximus bots) |
+| ElevenLabs | Trend Pulse voiceover (Adam voice, `pNInz6obpgDQGcFmaJgB`) |
+| Google Drive | Maximus candidate docs + Ottawa Weekly drafts |
+| YouTube Data API | Trend Pulse video upload + velocity scoring |
+| Beehiiv | Ottawa Weekly newsletter delivery |
+| GitHub | Workspace auto-commit (`brandoclaw/openclaw-workspace`) |
+| Pexels | Trend Pulse video background images |
+| Google Trends | Trend Pulse topic scoring (rate-limit handled) |
+
+_Skills installed but not currently active: xurl, weather, openai-whisper, peekaboo, apple-notes, and 40+ others_
