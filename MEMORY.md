@@ -37,7 +37,9 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Isolated agent: `maximus`, workspace: `~/.openclaw/workspace-maximus`
 - Discord bot: `@Maximus` | Telegram bot: `@Maximus_Smithsonian_bot`
 - Google Drive access via `maximus.smithsonian@gmail.com` (gcloud app-default creds, quota project: `project-a517b5a2-329c-4b94-895`)
-- **Job Search cron** (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays, presents Director/VP Product opportunities to Brando on Discord
+- **Job Search cron** (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays, searches ONLY the target company list (see below), presents Director/VP Product opportunities to Brando on Discord
+- **⚠️ Target companies only** — no roles posted unless from this list (Drive doc `1iyo8O56n3yzl7a6xS3QX31htuRIOeU2nPQeJabhH2VE`):
+  Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
 - **Weekly Summary Email** (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays, drafts summary email → Telegram approval → sends to rebarinvestments@gmail.com + d.piazza.13@gmail.com
 - Approval flow: APPROVE [Company] triggers one-pager + tailored resume to Drive + key contact research (no automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself)
 - First candidate: Brandon Chatreau (Brando himself)
@@ -60,9 +62,9 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 ## Ottawa Weekly (Sub-Agent — Live)
 
 - Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
-- Discord bot: `@TWITC` (channel: `929789415415504927`)
+- Discord bot: `@TWITC` — DMs working, approval flow confirmed live
 - Cron: `7c856e93` — **Thursdays 10 AM EST**
-- First live run: Thursday March 13, 2026
+- First live run: Thursday March 13, 2026 ✅
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -79,6 +81,16 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **`write` tool sandbox** — sandboxed to `~/.openclaw/workspace` only. For other agent workspaces, use `exec` with heredocs (`cat > file << 'EOF'`).
 - **`openclaw cron run` CLI** — has a 30s display timeout; jobs continue running in background. A timeout message from the CLI is NOT a failure indicator — check `openclaw cron runs --id <id>` to verify actual status.
 
+## Exempt from Plan-First Rule (Cron / Background Jobs)
+
+These automated pipelines run without requiring Brando's approval:
+- Workspace Auto-Commit (`ec1c9869`)
+- Daily Self-Review (`fba196ad`)
+- Daily Log (`8b64061f`)
+- Maximus Job Search (`13f32634`)
+- Weekly Summary Email Draft (`7c704287`) — draft only, send requires Telegram approval
+- Ottawa Weekly Newsletter (`7c856e93`) — draft only, save to Drive requires APPROVE
+
 ## Lessons Learned
 
 - `openclaw` CLI requires node path: `/opt/homebrew/Cellar/node@22/22.22.0_1/bin` in PATH
@@ -94,4 +106,4 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Handle: @maxsmithsonian
 - Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
 
-_Last updated: 2026-03-12_
+_Last updated: 2026-03-15_
