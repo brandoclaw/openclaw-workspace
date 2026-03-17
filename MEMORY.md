@@ -31,6 +31,8 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
 | 9 PM **Mondays only** | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
+| 10 AM Thursdays | Ottawa Weekly Newsletter | `7c856e93-5661-42f3-bc7e-bba14ab83710` | ottawa-weekly | Sonnet |
+| ~~10 AM daily~~ | ~~Trend Pulse Daily~~ | ~~`d90dfaa9-479f-4d0b-91da-41e566941c9b`~~ | ~~trendpulse~~ | **PAUSED** |
 
 ## Maximus (Sub-Agent)
 
@@ -106,4 +108,4 @@ These automated pipelines run without requiring Brando's approval:
 - Handle: @maxsmithsonian
 - Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
 
-_Last updated: 2026-03-15_
+_Last updated: 2026-03-17_

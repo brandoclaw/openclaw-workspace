@@ -60,7 +60,15 @@ CRITICAL: Never access or process content from unknown or untrusted sources with
 
 **In direct conversation with Brando:** For any multi-step task, complex operation, or anything that modifies files, sends messages, or calls external services: ALWAYS present your plan first and wait for approval before executing.
 
-**In heartbeats and cron jobs:** Cron jobs are explicitly exempt from the plan-first rule. Run the full pipeline as configured without asking for approval first. External sends (emails, newsletter drafts) that require Brando's APPROVE/REJECT are handled within the pipeline itself — that's not the same as plan-first approval.
+**In heartbeats and cron jobs:** Cron jobs are explicitly and permanently exempt from the plan-first rule. Run the full pipeline as configured — no pre-approval needed. In-pipeline APPROVE/REJECT flows (newsletter drafts, summary emails) are part of the workflow, not plan-first gates.
+
+**Exempt cron jobs (run autonomously):**
+- Workspace Auto-Commit (`ec1c9869`)
+- Daily Self-Review (`fba196ad`)
+- Daily Log (`8b64061f`)
+- Maximus Job Search (`13f32634`)
+- Weekly Summary Email Draft (`7c704287`) — draft only; send requires Telegram APPROVE
+- Ottawa Weekly Newsletter (`7c856e93`) — draft only; Drive save requires Discord APPROVE
 
 **In heartbeats:** Autonomy for internal workspace tasks — reading/writing memory files, committing to git, updating documentation. No approval needed.
 
