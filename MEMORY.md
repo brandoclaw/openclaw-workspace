@@ -32,14 +32,14 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | 9 PM **Mondays only** | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
 | 10 AM Thursdays | Ottawa Weekly Newsletter | `7c856e93-5661-42f3-bc7e-bba14ab83710` | ottawa-weekly | Sonnet |
-| ~~10 AM daily~~ | ~~Trend Pulse Daily~~ | ~~`d90dfaa9-479f-4d0b-91da-41e566941c9b`~~ | ~~trendpulse~~ | **PAUSED** |
+| ~~10 AM daily~~ | ~~Trend Pulse Daily~~ | ~~`d90dfaa9`~~ | ~~trendpulse~~ | **PAUSED** as of Mar 14 |
 
 ## Maximus (Sub-Agent)
 
 - Isolated agent: `maximus`, workspace: `~/.openclaw/workspace-maximus`
 - Discord bot: `@Maximus` | Telegram bot: `@Maximus_Smithsonian_bot`
 - Google Drive access via `maximus.smithsonian@gmail.com` (gcloud app-default creds, quota project: `project-a517b5a2-329c-4b94-895`)
-- **Job Search cron** (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays, searches ONLY the target company list (see below), presents Director/VP Product opportunities to Brando on Discord
+- **Job Search cron** (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays, searches ONLY the target company list (see below), presents PM/Director/VP Product opportunities to Brando on Discord
 - **⚠️ Target companies only** — no roles posted unless from this list (Drive doc `1iyo8O56n3yzl7a6xS3QX31htuRIOeU2nPQeJabhH2VE`):
   Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
 - **Weekly Summary Email** (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays, drafts summary email → Telegram approval → sends to rebarinvestments@gmail.com + d.piazza.13@gmail.com
@@ -51,7 +51,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 ## Trend Pulse (Sub-Agent)
 
 - Isolated agent: `trendpulse`, workspace: `~/.openclaw/workspace-trendpulse`
-- Runs daily at 10 AM EST via cron (`d90dfaa9`)
+- ⚠️ **PAUSED indefinitely as of Mar 14, 2026** — cron disabled
 - Pipeline: scoring engine v2 (YouTube Data API velocity + Google Trends + TikTok static hashtags) → ElevenLabs voiceover (Adam voice, ID: `pNInz6obpgDQGcFmaJgB`) → video assembly → YouTube upload
 - YouTube OAuth: `~/.openclaw/youtube_token.pkl` (scopes: upload, delete, gmail.send)
 - YouTube OAuth client: `~/.openclaw/youtube_client_installed.json`
@@ -79,7 +79,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 ## Known Limitations
 
-- **memory_search** — powered by Gemini (`gemini-embedding-001`). Previously on OpenAI (quota exhausted). Now fully operational.
+- **memory_search** — powered by Gemini (`gemini-embedding-001`). Fully operational as of Mar 19.
 - **`write` tool sandbox** — sandboxed to `~/.openclaw/workspace` only. For other agent workspaces, use `exec` with heredocs (`cat > file << 'EOF'`).
 - **`openclaw cron run` CLI** — has a 30s display timeout; jobs continue running in background. A timeout message from the CLI is NOT a failure indicator — check `openclaw cron runs --id <id>` to verify actual status.
 
@@ -108,4 +108,4 @@ These automated pipelines run without requiring Brando's approval:
 - Handle: @maxsmithsonian
 - Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
 
-_Last updated: 2026-03-17_
+_Last updated: 2026-03-20_

@@ -207,6 +207,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
 - Daily log (`8b64061f-daa6-4d21-9581-7616a5a29967`) — 11 PM EST, writes memory/YYYY-MM-DD.md (Haiku)
 - ~~Trend Pulse daily (`d90dfaa9-479f-4d0b-91da-41e566941c9b`)~~ — **PAUSED indefinitely** as of Mar 14, 2026
+- Ottawa Weekly newsletter (`7c856e93-5661-42f3-bc7e-bba14ab83710`) — Thursdays 10 AM EST (ottawa-weekly agent) — preview → Brando APPROVE → save to Drive
 - Maximus job search (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays (maximus agent, Haiku) — target companies only: Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
 - Weekly summary email (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays (maximus agent)
 - Ottawa Weekly newsletter (`7c856e93-5661-42f3-bc7e-bba14ab83710`) — Thursdays 10 AM EST (ottawa-weekly agent) — preview → Brando APPROVE → save to Drive
