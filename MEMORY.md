@@ -79,7 +79,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 ## Known Limitations
 
-- **memory_search unavailable** — OpenAI embeddings quota exhausted. Fallback: manually read MEMORY.md + recent memory/YYYY-MM-DD.md files directly.
+- **memory_search** — powered by Gemini (`gemini-embedding-001`). Previously on OpenAI (quota exhausted). Now fully operational.
 - **`write` tool sandbox** — sandboxed to `~/.openclaw/workspace` only. For other agent workspaces, use `exec` with heredocs (`cat > file << 'EOF'`).
 - **`openclaw cron run` CLI** — has a 30s display timeout; jobs continue running in background. A timeout message from the CLI is NOT a failure indicator — check `openclaw cron runs --id <id>` to verify actual status.
 
