@@ -27,7 +27,6 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 |------|-----|----|-------|-------|
 | 8 AM weekdays | Maximus Job Search | `13f32634-517b-481d-a95e-633a4915fff6` | maximus | Haiku |
 | 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | Sonnet |
-| 10 AM daily | Trend Pulse Daily | `d90dfaa9-479f-4d0b-91da-41e566941c9b` | trendpulse | Sonnet |
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
 | 9 PM **Mondays only** | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
@@ -39,7 +38,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Isolated agent: `maximus`, workspace: `~/.openclaw/workspace-maximus`
 - Discord bot: `@Maximus` | Telegram bot: `@Maximus_Smithsonian_bot`
 - Google Drive access via `maximus.smithsonian@gmail.com` (gcloud app-default creds, quota project: `project-a517b5a2-329c-4b94-895`)
-- **Job Search cron** (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays, searches ONLY the target company list (see below), presents PM/Director/VP Product opportunities to Brando on Discord
+- **Job Search cron** (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays, searches ONLY the target company list (see below), presents Product Manager, Director, and VP Product roles to Brando on Discord
 - **⚠️ Target companies only** — no roles posted unless from this list (Drive doc `1iyo8O56n3yzl7a6xS3QX31htuRIOeU2nPQeJabhH2VE`):
   Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
 - **Weekly Summary Email** (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays, drafts summary email → Telegram approval → sends to rebarinvestments@gmail.com + d.piazza.13@gmail.com
@@ -64,7 +63,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 ## Ottawa Weekly (Sub-Agent — Live)
 
 - Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
-- Discord bot: `@TWITC` — DMs working, approval flow confirmed live
+- Discord bot: `@TWITC` — DMs working, correct channel: `1480978327945609237`
 - Cron: `7c856e93` — **Thursdays 10 AM EST**
 - First live run: Thursday March 13, 2026 ✅
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
@@ -108,4 +107,4 @@ These automated pipelines run without requiring Brando's approval:
 - Handle: @maxsmithsonian
 - Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
 
-_Last updated: 2026-03-20_
+_Last updated: 2026-03-21 (P2 fixes)_
