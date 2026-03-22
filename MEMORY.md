@@ -107,4 +107,4 @@ These automated pipelines run without requiring Brando's approval:
 - Handle: @maxsmithsonian
 - Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
 
-_Last updated: 2026-03-21 (P2 fixes)_
+_Last updated: 2026-03-22_
