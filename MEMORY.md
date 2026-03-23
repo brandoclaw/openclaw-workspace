@@ -63,9 +63,11 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 ## Ottawa Weekly (Sub-Agent — Live)
 
 - Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
-- Discord bot: `@TWITC` — DMs working, correct channel: `1480978327945609237`
+- Discord bot: `@TWITC` — DMs working, approval flow confirmed live
 - Cron: `7c856e93` — **Thursdays 10 AM EST**
 - First live run: Thursday March 13, 2026 ✅
+- Pipeline: auto-saves HTML to Drive (`local news letter agent/drafts/`), notifies Brando on Discord — no approval gate
+- Correct Discord channel: `1480978327945609237`
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -90,7 +92,7 @@ These automated pipelines run without requiring Brando's approval:
 - Daily Log (`8b64061f`)
 - Maximus Job Search (`13f32634`)
 - Weekly Summary Email Draft (`7c704287`) — draft only, send requires Telegram approval
-- Ottawa Weekly Newsletter (`7c856e93`) — draft only, save to Drive requires APPROVE
+- Ottawa Weekly Newsletter (`7c856e93`) — auto-saves HTML to Drive, notifies Brando on Discord
 
 ## Lessons Learned
 
@@ -108,3 +110,10 @@ These automated pipelines run without requiring Brando's approval:
 - Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
 
 _Last updated: 2026-03-22_
+
+## Recent Activity (Mar 22)
+- Ottawa Weekly Issue #4 approved → saved to Drive (`TWITC_Draft_2026-03-20.html`)
+- Wealthsimple approval triggered → Maximus running one-pager + resume + contacts pipeline
+- Ottawa Weekly: no longer approval-gated — auto-saves every Thursday, notifies on Discord
+- Ottawa Weekly correct Discord channel: `1480978327945609237`
+- memory_search: fully operational via Gemini as of Mar 19
