@@ -31,7 +31,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | 9 PM **Mondays only** | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
 | 10 AM Thursdays | Ottawa Weekly Newsletter | `7c856e93-5661-42f3-bc7e-bba14ab83710` | ottawa-weekly | Sonnet |
-| ~~10 AM daily~~ | ~~Trend Pulse Daily~~ | ~~`d90dfaa9`~~ | ~~trendpulse~~ | **PAUSED** as of Mar 14 |
+
 
 ## Maximus (Sub-Agent)
 
@@ -43,22 +43,23 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
   Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
 - **Weekly Summary Email** (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays, drafts summary email → Telegram approval → sends to rebarinvestments@gmail.com + d.piazza.13@gmail.com
 - Approval flow: APPROVE [Company] triggers one-pager + tailored resume to Drive + key contact research (no automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself)
+- ⚠️ **APPROVE/SKIP decisions are session-volatile** — not tracked in long-term memory. On a fresh session, check recent Maximus Discord posts to see what's pending or already actioned.
 - First candidate: Brandon Chatreau (Brando himself)
 - Drive structure: `Candidates/brandon chatreau/Opportunities/` and `/Resumes/`
 - Workflows folder in Drive: `1yQ_Mj-ovn2LddvX38GtkhO-s004kZoaR` — master workflow doc lives here
 
-## Trend Pulse (Sub-Agent)
 
-- Isolated agent: `trendpulse`, workspace: `~/.openclaw/workspace-trendpulse`
-- ⚠️ **PAUSED indefinitely as of Mar 14, 2026** — cron disabled
-- Pipeline: scoring engine v2 (YouTube Data API velocity + Google Trends + TikTok static hashtags) → ElevenLabs voiceover (Adam voice, ID: `pNInz6obpgDQGcFmaJgB`) → video assembly → YouTube upload
-- YouTube OAuth: `~/.openclaw/youtube_token.pkl` (scopes: upload, delete, gmail.send)
-- YouTube OAuth client: `~/.openclaw/youtube_client_installed.json`
-- 3-tier hashtag strategy: broad reach + niche-specific + long-tail (20 hashtags/video)
-- Topic-aware Pexels image queries (Finance → charts/money, AI → robots/code)
-- ⚠️ FFmpeg on this machine lacks libfreetype — drawtext/caption overlay NOT available
-- ⚠️ Google Trends hits 429 rate limits — handled with retry/backoff logic
-- Videos saved to Drive before upload
+## Growth (Sub-Agent — 🌱 New)
+
+- Isolated agent: `growth`, workspace: `~/.openclaw/workspace-growth`
+- **Mission:** Grow Ottawa Weekly subscriber base — target: a few hundred/week
+- **Budget:** $200/month across Meta Ads + Google Ads
+- **Organic:** Reddit auto-posts (r/ottawa, r/OttawaHousing, r/Gatineau, r/OttawaFood, r/ottawaevents) — no approval gate; Facebook community posts — draft-and-paste (Brando manual)
+- **Paid ads approval:** 2 gates — (1) creative approval, (2) spend approval — both required before any campaign launch
+- **Analytics:** Beehiiv API for subscriber tracking
+- **Weekly report:** Mondays to Brando on Discord
+- **Scripts:** `reddit_post.py`, `beehiiv_analytics.py`, `facebook_draft.py`
+- **Credentials:** All pending — drop into `~/.openclaw/workspace-growth/.env` (see `.env.example`)
 
 ## Ottawa Weekly (Sub-Agent — Live ✅)
 
@@ -96,16 +97,9 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
----
+_Last updated: 2026-03-27_
 
-## Trend Pulse YouTube Channel
-- Handle: @maxsmithsonian
-- Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
-
-_Last updated: 2026-03-26_
-
-## Recent Activity (Mar 26)
+## Recent Activity (Mar 27)
 - Ottawa Weekly delivery pipeline: confirmed fixed ✅
-- Wealthsimple approval triggered (Mar 22) → Maximus one-pager + resume + contacts pipeline
-- Ottawa Weekly: auto-saves every Thursday, notifies on Discord (channel `1480978327945609237`)
-- memory_search: fully operational via Gemini as of Mar 19
+- Wealthsimple (Mar 22): Maximus one-pager + resume pipeline ✅ complete
+- Trend Pulse archived — agent config removed, cron was already paused since Mar 14

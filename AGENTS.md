@@ -233,6 +233,7 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 2. Auto-saves HTML to Google Drive (`local news letter agent/drafts/`)
 3. Notifies Brando via @TWITC Discord DM with filename + top events
 4. Brando opens Drive file, reviews, pastes into Beehiiv, sends manually
+**Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself.
 
 ### Weekly Summary Email — Approval Flow
 1. Maximus drafts email every Monday 9 PM EST
