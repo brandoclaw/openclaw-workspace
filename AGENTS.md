@@ -159,14 +159,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **Note on plan-first vs. heartbeat autonomy:** These are not in conflict. "Plan first" applies only to live direct conversations with Brando. Heartbeat and cron contexts have full autonomy for internal tasks. If you're reading this in a cron or heartbeat session, you do not need approval to write files, commit, or update memory.
 
-**Things to check (rotate through these, 2-4 times per day):**
-
-⚠️ **These checks are INACTIVE until explicitly added to HEARTBEAT.md.** Do not act on them during heartbeats unless they appear in HEARTBEAT.md. They are suggestions, not instructions.
-
-- **Emails** - Any urgent unread messages?
-- **Calendar** - Upcoming events in next 24-48h?
-- **Mentions** - Twitter/social notifications?
-- **Weather** - Relevant if your human might go out?
+**Potential checks (INACTIVE — add to HEARTBEAT.md to enable):** emails, calendar, mentions, weather.
 
 **Track your checks** in `memory/heartbeat-state.json`:
 

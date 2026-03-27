@@ -60,15 +60,14 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - ⚠️ Google Trends hits 429 rate limits — handled with retry/backoff logic
 - Videos saved to Drive before upload
 
-## Ottawa Weekly (Sub-Agent — ⚠️ Broken)
+## Ottawa Weekly (Sub-Agent — Live ✅)
 
 - Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
-- Discord bot: `@TWITC` — **cannot DM Brando directly** (groupPolicy restriction — see Known Limitations)
-- Cron: `7c856e93` — **Thursdays 10 AM EST** — ⚠️ currently in error/broken state
+- Discord bot: `@TWITC` — delivers to Brando via TWITC Discord channel ✅
+- Cron: `7c856e93` — **Thursdays 10 AM EST**
 - First live run: Thursday March 13, 2026 ✅
 - Pipeline: auto-saves HTML to Drive (`local news letter agent/drafts/`), notifies Brando on Discord — no approval gate
 - Correct Discord channel: `1480978327945609237`
-- Delivery broken — @TWITC bot cannot reach Brando; workaround (route via Max bot) not yet implemented
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -87,16 +86,6 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **@TWITC bot DMs** — `groupPolicy` restriction prevents @TWITC from DMing Brando directly. Cross-bot routing (via Max bot) is the only workaround.
 - **`channels.discord.accounts.*` allowlist key** — NOT supported; crashes the gateway. Do not attempt to restrict bot DMs via allowlist config. Cross-bot routing is the only workaround for restricted DMs.
 
-## Exempt from Plan-First Rule (Cron / Background Jobs)
-
-These automated pipelines run without requiring Brando's approval:
-- Workspace Auto-Commit (`ec1c9869`)
-- Daily Self-Review (`fba196ad`)
-- Daily Log (`8b64061f`)
-- Maximus Job Search (`13f32634`)
-- Weekly Summary Email Draft (`7c704287`) — draft only, send requires Telegram approval
-- Ottawa Weekly Newsletter (`7c856e93`) — auto-saves HTML to Drive, notifies Brando on Discord
-
 ## Lessons Learned
 
 - `openclaw` CLI requires node path: `/opt/homebrew/Cellar/node@22/22.22.0_1/bin` in PATH
@@ -113,7 +102,7 @@ These automated pipelines run without requiring Brando's approval:
 - Handle: @maxsmithsonian
 - Description (confirmed by Brando, Mar 10): "Your daily pulse on the trends shaping finance, AI, and the world — distilled into sharp, no-fluff breakdowns every day."
 
-_Last updated: 2026-03-22_
+_Last updated: 2026-03-26_
 
 ## Recent Activity (Mar 26)
 - Ottawa Weekly delivery pipeline: confirmed fixed ✅
