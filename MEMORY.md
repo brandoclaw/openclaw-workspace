@@ -60,14 +60,15 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - ⚠️ Google Trends hits 429 rate limits — handled with retry/backoff logic
 - Videos saved to Drive before upload
 
-## Ottawa Weekly (Sub-Agent — Live)
+## Ottawa Weekly (Sub-Agent — ⚠️ Broken)
 
 - Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
-- Discord bot: `@TWITC` — DMs working, approval flow confirmed live
-- Cron: `7c856e93` — **Thursdays 10 AM EST**
+- Discord bot: `@TWITC` — **cannot DM Brando directly** (groupPolicy restriction — see Known Limitations)
+- Cron: `7c856e93` — **Thursdays 10 AM EST** — ⚠️ currently in error/broken state
 - First live run: Thursday March 13, 2026 ✅
 - Pipeline: auto-saves HTML to Drive (`local news letter agent/drafts/`), notifies Brando on Discord — no approval gate
 - Correct Discord channel: `1480978327945609237`
+- Delivery broken — @TWITC bot cannot reach Brando; workaround (route via Max bot) not yet implemented
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -83,6 +84,8 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **memory_search** — powered by Gemini (`gemini-embedding-001`). Fully operational as of Mar 19.
 - **`write` tool sandbox** — sandboxed to `~/.openclaw/workspace` only. For other agent workspaces, use `exec` with heredocs (`cat > file << 'EOF'`).
 - **`openclaw cron run` CLI** — has a 30s display timeout; jobs continue running in background. A timeout message from the CLI is NOT a failure indicator — check `openclaw cron runs --id <id>` to verify actual status.
+- **@TWITC bot DMs** — `groupPolicy` restriction prevents @TWITC from DMing Brando directly. Cross-bot routing (via Max bot) is the only workaround.
+- **`channels.discord.accounts.*` allowlist key** — NOT supported; crashes the gateway. Do not attempt to restrict bot DMs via allowlist config. Cross-bot routing is the only workaround for restricted DMs.
 
 ## Exempt from Plan-First Rule (Cron / Background Jobs)
 
@@ -102,6 +105,7 @@ These automated pipelines run without requiring Brando's approval:
 - Discord bot DMs require pairing approval via `openclaw pairing approve --channel discord <code>`
 - Telegram pairing: `openclaw pairing approve --channel telegram <code>`
 - gcloud app-default login needs explicit `--scopes` to include Drive access
+- `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
 ---
 
@@ -111,9 +115,8 @@ These automated pipelines run without requiring Brando's approval:
 
 _Last updated: 2026-03-22_
 
-## Recent Activity (Mar 22)
-- Ottawa Weekly Issue #4 approved → saved to Drive (`TWITC_Draft_2026-03-20.html`)
-- Wealthsimple approval triggered → Maximus running one-pager + resume + contacts pipeline
-- Ottawa Weekly: no longer approval-gated — auto-saves every Thursday, notifies on Discord
-- Ottawa Weekly correct Discord channel: `1480978327945609237`
+## Recent Activity (Mar 26)
+- Ottawa Weekly delivery pipeline: confirmed fixed ✅
+- Wealthsimple approval triggered (Mar 22) → Maximus one-pager + resume + contacts pipeline
+- Ottawa Weekly: auto-saves every Thursday, notifies on Discord (channel `1480978327945609237`)
 - memory_search: fully operational via Gemini as of Mar 19
