@@ -49,17 +49,11 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Workflows folder in Drive: `1yQ_Mj-ovn2LddvX38GtkhO-s004kZoaR` — master workflow doc lives here
 
 
-## Growth (Sub-Agent — 🌱 New)
+## Growth (Sub-Agent — ⏸️ Shelved)
 
 - Isolated agent: `growth`, workspace: `~/.openclaw/workspace-growth`
-- **Mission:** Grow Ottawa Weekly subscriber base — target: a few hundred/week
-- **Budget:** $200/month across Meta Ads + Google Ads
-- **Organic:** Reddit auto-posts (r/ottawa, r/OttawaHousing, r/Gatineau, r/OttawaFood, r/ottawaevents) — no approval gate; Facebook community posts — draft-and-paste (Brando manual)
-- **Paid ads approval:** 2 gates — (1) creative approval, (2) spend approval — both required before any campaign launch
-- **Analytics:** Beehiiv API for subscriber tracking
-- **Weekly report:** Mondays to Brando on Discord
-- **Scripts:** `reddit_post.py`, `beehiiv_analytics.py`, `facebook_draft.py`
-- **Credentials:** All pending — drop into `~/.openclaw/workspace-growth/.env` (see `.env.example`)
+- **Shelved as of Mar 28, 2026** — workspace + scripts intact, Beehiiv creds configured, Reddit/Meta/Google pending
+- Revive when ready: drop Reddit + ad credentials into `.env`, wire up crons
 
 ## Ottawa Weekly (Sub-Agent — Live ✅)
 
@@ -69,6 +63,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - First live run: Thursday March 13, 2026 ✅
 - Pipeline: auto-saves HTML to Drive (`local news letter agent/drafts/`), notifies Brando on Discord — no approval gate
 - Correct Discord channel: `1480978327945609237`
+- **Draft in Drive = done.** No tracking of whether Brando pasted into Beehiiv — that's fully his call, no follow-up needed.
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -97,7 +92,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-03-27_
+_Last updated: 2026-03-28_
 
 ## Recent Activity (Mar 27)
 - Ottawa Weekly delivery pipeline: confirmed fixed ✅
