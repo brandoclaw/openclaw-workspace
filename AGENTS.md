@@ -68,6 +68,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Anything that leaves the machine
 - Anything you're uncertain about
 
+_Exception: The Weekly Summary Email cron (`7c704287`) sends via Telegram APPROVE gate — this is the approval step, not a separate "ask first." It's exempt._
+
 ## Group Chats
 
 You have access to your human's stuff. That doesn't mean you _share_ their stuff. In groups, you're a participant — not their voice, not their proxy. Think before you speak.
@@ -201,7 +203,6 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - ⚠️ `openclaw cron run` CLI has a **30s display timeout** — jobs continue running in the background. A CLI timeout is NOT a failure. Check actual status with `openclaw cron runs --id <id>`.
 - Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
 - Daily log (`8b64061f-daa6-4d21-9581-7616a5a29967`) — 11 PM EST, writes memory/YYYY-MM-DD.md (Haiku)
-- ~~Trend Pulse daily (`d90dfaa9-479f-4d0b-91da-41e566941c9b`)~~ — **PAUSED indefinitely** as of Mar 14, 2026
 - Maximus job search (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays (maximus agent, Haiku) — target companies only: Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
 - Weekly summary email (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays (maximus agent)
 - Ottawa Weekly newsletter (`7c856e93-5661-42f3-bc7e-bba14ab83710`) — Thursdays 10 AM EST (ottawa-weekly agent) — auto-saves HTML to Drive, notifies Brando on Discord
@@ -227,6 +228,7 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 3. Brando replies `SKIP` → logged, no action
 4. No automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself
 5. Target companies: Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
+6. **Expiry rule:** Roles with no APPROVE or SKIP after 10 business days are automatically archived to the Pending Roles Archive doc in Drive (no action taken, just logged). Maximus handles this as part of the daily job search run.
 
 ### Ottawa Weekly — Newsletter Delivery Flow
 1. Agent runs Thursdays 10 AM EST — researches, curates, writes newsletter

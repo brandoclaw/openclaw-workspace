@@ -74,12 +74,15 @@ Skills/tools currently in active use:
 |------|---------|
 | Discord | Primary chat surface (Max + Maximus + @TWITC bots) |
 | Telegram | Secondary surface (Max + Maximus bots) |
-| ElevenLabs | Trend Pulse voiceover (Adam voice, `pNInz6obpgDQGcFmaJgB`) |
 | Google Drive | Maximus candidate docs + Ottawa Weekly drafts |
-| YouTube Data API | Trend Pulse video upload + velocity scoring |
 | Beehiiv | Ottawa Weekly newsletter delivery |
 | GitHub | Workspace auto-commit (`brandoclaw/openclaw-workspace`) |
-| Pexels | Trend Pulse video background images |
-| Google Trends | Trend Pulse topic scoring (rate-limit handled) |
+
+## Cross-Bot Routing — @TWITC → Brando
+
+**Problem:** @TWITC bot cannot DM Brando directly due to `groupPolicy` restriction.
+**Workaround:** Ottawa Weekly pipeline routes delivery through the Max bot instead.
+**Implementation:** Ottawa Weekly agent sends notifications to `channel:1477875798206582837` (Brando's Max bot DM) rather than via @TWITC directly.
+**If it breaks:** Check that the ottawa-weekly agent is targeting `channel:1477875798206582837` in its delivery config, not a @TWITC-owned channel. The @TWITC bot itself is only used for the newsletter content channel (`1480978327945609237`), not for DMs to Brando.
 
 _Skills installed but not currently active: xurl, weather, openai-whisper, peekaboo, apple-notes, and 40+ others_
