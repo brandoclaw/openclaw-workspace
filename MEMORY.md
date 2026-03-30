@@ -45,7 +45,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Approval flow: APPROVE [Company] triggers one-pager + tailored resume to Drive + key contact research (no automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself)
 - ⚠️ **APPROVE/SKIP decisions are session-volatile** — not tracked in long-term memory. On a fresh session, check recent Maximus Discord posts to see what's pending or already actioned.
 - **`APPROVE ALL`** is a valid command — runs the full one-pager + resume + contacts pipeline for every pending role at once.
-- **Expiry rule:** Roles unanswered after 10 business days are auto-archived to the Pending Roles Archive doc in Drive. No action taken — just logged.
+- **Expiry rule:** Roles unanswered after 5 business days are auto-archived to the Pending Roles Archive doc in Drive. No action taken — just logged.
 - First candidate: Brandon Chatreau (Brando himself)
 - Drive structure: `Candidates/brandon chatreau/Opportunities/` and `/Resumes/`
 - Workflows folder in Drive: `1yQ_Mj-ovn2LddvX38GtkhO-s004kZoaR` — master workflow doc lives here
@@ -90,13 +90,11 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-03-29_
+_Last updated: 2026-03-30_
 
-## Recent Activity (Mar 29)
-- Ottawa Weekly Issue #4 (`TWITC_Draft_2026-03-20.html`): confirmed delivered ✅ — closed
-- Ottawa Weekly Issue #5: delivered ✅
-- Trend Pulse archived — agent config removed, cron was already paused since Mar 14
-- Wealthsimple (Mar 22): Maximus one-pager + resume pipeline ✅ complete
-- Bulk approved 6 pending Maximus roles (Mar 28) → one-pagers + resumes delivered to Drive ✅
-- Maximus role expiry policy: 10 business days → auto-archive to Drive doc
-- Growth agent shelved — workspace intact, Beehiiv connected (123 subs baseline)
+## Recent Activity (Mar 30)
+- Maximus pipeline now produces: one-pager + resume + cover letter per role ✅
+- `APPROVE ALL` confirmed as primary approval command
+- Role expiry reduced to 5 business days → auto-archive to Drive
+- Growth agent archived (Mar 29)
+- Ottawa Weekly issues #4 + #5 delivered to Drive ✅

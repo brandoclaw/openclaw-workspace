@@ -224,18 +224,20 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 ### Maximus — Job Search Approval Flow
 1. Maximus posts qualifying roles (target companies only) to Discord at 8 AM EST weekdays
-2. Brando replies `APPROVE [Company]` → Maximus generates one-pager + tailored resume → saves to Drive → identifies key contacts
-3. Brando replies `SKIP` → logged, no action
-4. No automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself
-5. Target companies: Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
-6. **Expiry rule:** Roles with no APPROVE or SKIP after 10 business days are automatically archived to the Pending Roles Archive doc in Drive (no action taken, just logged). Maximus handles this as part of the daily job search run.
+2. **Primary:** Brando replies `APPROVE ALL` → Maximus runs the full pipeline for every pending role at once
+3. **Single role:** Brando replies `APPROVE [Company]` → runs pipeline for that role only
+4. **Pipeline output per role:** one-pager + tailored resume + cover letter → saved to Drive + key contacts identified
+5. Brando replies `SKIP` → logged, no action
+6. No automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself
+7. Target companies: Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
+8. **Expiry rule:** Roles with no APPROVE or SKIP after 5 business days are automatically archived to the Pending Roles Archive doc in Drive (no action taken, just logged). Maximus handles this as part of the daily job search run.
 
 ### Ottawa Weekly — Newsletter Delivery Flow
 1. Agent runs Thursdays 10 AM EST — researches, curates, writes newsletter
 2. Auto-saves HTML to Google Drive (`local news letter agent/drafts/`)
-3. Notifies Brando via @TWITC Discord DM with filename + top events
+3. Posts to TWITC Discord channel (`1480978327945609237`) with filename + top events
 4. Brando opens Drive file, reviews, pastes into Beehiiv, sends manually
-**Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself.
+**Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself. Max does not follow up on whether a draft was sent. Draft in Drive = done.
 
 ### Weekly Summary Email — Approval Flow
 1. Maximus drafts email every Monday 9 PM EST
