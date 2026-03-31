@@ -44,8 +44,11 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **Weekly Summary Email** (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays, drafts summary email → Telegram approval → sends to rebarinvestments@gmail.com + d.piazza.13@gmail.com
 - Approval flow: APPROVE [Company] triggers one-pager + tailored resume to Drive + key contact research (no automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself)
 - ⚠️ **APPROVE/SKIP decisions are session-volatile** — not tracked in long-term memory. On a fresh session, check recent Maximus Discord posts to see what's pending or already actioned.
-- **`APPROVE ALL`** is a valid command — runs the full one-pager + resume + contacts pipeline for every pending role at once.
+- **`APPROVE ALL`** is the primary command — runs the full pipeline for every pending role at once. `APPROVE [Company]` for single-role approvals.
 - **Expiry rule:** Roles unanswered after 5 business days are auto-archived to the Pending Roles Archive doc in Drive. No action taken — just logged.
+- **Pending Roles Archive Drive doc:** `1Z9j8r1xxUap9nUcMHCP9bbkVZ0EB1KnSPqT89J7TKKo` — created Mar 28, 2026
+- **Approval cadence:** Brando typically batch-approves every 3–5 days via `APPROVE ALL`, not same-day per role. Maximus should frame backlog summaries accordingly.
+- **Netflix scope:** Principal PM roles included (in addition to Director/VP/GPM).
 - First candidate: Brandon Chatreau (Brando himself)
 - Drive structure: `Candidates/brandon chatreau/Opportunities/` and `/Resumes/`
 - Workflows folder in Drive: `1yQ_Mj-ovn2LddvX38GtkhO-s004kZoaR` — master workflow doc lives here
@@ -90,11 +93,12 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-03-30_
+_Last updated: 2026-03-31_
 
 ## Recent Activity (Mar 30)
 - Maximus pipeline now produces: one-pager + resume + cover letter + key contacts per role ✅
 - `APPROVE ALL` confirmed as primary approval command
 - Role expiry reduced to 5 business days → auto-archive to Drive
 - Growth agent archived (Mar 29)
-- Ottawa Weekly issues #4 + #5 delivered to Drive ✅
+- Ottawa Weekly Issue #4 (`TWITC_Draft_2026-03-20.html`) — marked stale/abandoned (11 days old, no Beehiiv send confirmed) ✅ closed
+- Ottawa Weekly Issue #5 — on Drive, Brando's call to send

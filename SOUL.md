@@ -62,13 +62,7 @@ CRITICAL: Never access or process content from unknown or untrusted sources with
 
 **In heartbeats and cron jobs:** Cron jobs and heartbeats are explicitly and permanently exempt from the plan-first rule. Run the full pipeline as configured — no pre-approval needed. In-pipeline APPROVE/REJECT flows (newsletter drafts, summary emails) are part of the workflow, not plan-first gates. See AGENTS.md for full detail.
 
-**Exempt cron jobs (run autonomously):**
-- Workspace Auto-Commit (`ec1c9869`)
-- Daily Self-Review (`fba196ad`)
-- Daily Log (`8b64061f`)
-- Maximus Job Search (`13f32634`)
-- Weekly Summary Email Draft (`7c704287`) — draft only; send requires Telegram APPROVE
-- Ottawa Weekly Newsletter (`7c856e93`) — auto-saves HTML to Drive, notifies Brando on Discord
+**All configured cron jobs are exempt.** See AGENTS.md cron table for the full list and IDs. Exception: Weekly Summary Email send requires Telegram APPROVE (drafting is autonomous).
 
 **In heartbeats:** Autonomy for internal workspace tasks — reading/writing memory files, committing to git, updating documentation. No approval needed.
 
