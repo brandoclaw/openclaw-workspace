@@ -93,7 +93,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 _Last updated: 2026-03-30_
 
 ## Recent Activity (Mar 30)
-- Maximus pipeline now produces: one-pager + resume + cover letter per role ✅
+- Maximus pipeline now produces: one-pager + resume + cover letter + key contacts per role ✅
 - `APPROVE ALL` confirmed as primary approval command
 - Role expiry reduced to 5 business days → auto-archive to Drive
 - Growth agent archived (Mar 29)

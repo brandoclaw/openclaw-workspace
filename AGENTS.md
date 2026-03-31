@@ -226,7 +226,7 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 1. Maximus posts qualifying roles (target companies only) to Discord at 8 AM EST weekdays
 2. **Primary:** Brando replies `APPROVE ALL` → Maximus runs the full pipeline for every pending role at once
 3. **Single role:** Brando replies `APPROVE [Company]` → runs pipeline for that role only
-4. **Pipeline output per role:** one-pager + tailored resume + cover letter → saved to Drive + key contacts identified
+4. **Pipeline output per role:** one-pager + tailored resume + cover letter → saved to Drive → key contacts identified
 5. Brando replies `SKIP` → logged, no action
 6. No automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself
 7. Target companies: Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
