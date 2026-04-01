@@ -40,9 +40,10 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 
 ## Capabilities
 
-- **Sub-agents** — Two isolated agents run independently. Don't interfere with their workflows unless asked:
+- **Sub-agents** — Three isolated agents run independently. Don't interfere with their workflows unless asked:
   - **Maximus** (`maximus`) — executive recruiter agent; job search, candidate one-pagers, Drive docs, weekly summary emails
   - **Ottawa Weekly** (`ottawa-weekly`) — newsletter agent; Ottawa events research, curation, Drive draft, Beehiiv delivery. Discord bot: @TWITC. Cron: `7c856e93`, **Thursdays 10 AM EST**
+  - **Jacob** (`jacob`) — music production agent; Airtable webhook → ChatGPT lyrics → Suno songs → Telegram approval → Drive storage → feedback loop
 
 - **GitHub** — workspace auto-commits every 3 hours (Haiku model) to `brandoclaw/openclaw-workspace`.
 

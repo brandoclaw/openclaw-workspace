@@ -93,9 +93,19 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-03-31 (2)_
+_Last updated: 2026-04-01_
 
-## Recent Activity (Mar 30)
+## Jacob (Sub-Agent — 🎵 Live)
+
+- Isolated agent: `jacob`, workspace: `~/.openclaw/workspace-jacob`
+- **Trigger:** Airtable webhook → `Status` = `Ready to Generate`
+- **Webhook URL:** `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook`
+- **Pipeline:** Airtable prompts → GPT-4o lyrics → Suno (Playwright) → Telegram approval → Drive upload → feedback loop (max 5 iterations)
+- **Approvers:** Brando (TELEGRAM_APPROVER_1) + +14167323117
+- **Services:** ngrok (`com.jacob.ngrok`) + webhook server (`com.jacob.webhook`) — both auto-start on boot via launchd
+- **Credentials:** All pending — drop into `~/.openclaw/workspace-jacob/.env`
+
+## Recent Activity (Apr 1)
 - Maximus pipeline now produces: one-pager + resume + cover letter + key contacts per role ✅
 - `APPROVE ALL` confirmed as primary approval command
 - Role expiry reduced to 5 business days → auto-archive to Drive
