@@ -25,7 +25,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 | Time | Job | ID | Agent | Model |
 |------|-----|----|-------|-------|
-| 8 AM weekdays | Maximus Job Search | `13f32634-517b-481d-a95e-633a4915fff6` | maximus | Haiku |
+| ~~8 AM weekdays~~ | ~~Maximus Job Search~~ | ~~`13f32634-517b-481d-a95e-633a4915fff6`~~ | ~~maximus~~ | **PAUSED** as of Mar 31 |
 | 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | Sonnet |
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
 | 9 PM **Mondays only** | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
@@ -93,7 +93,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-03-31_
+_Last updated: 2026-03-31 (2)_
 
 ## Recent Activity (Mar 30)
 - Maximus pipeline now produces: one-pager + resume + cover letter + key contacts per role ✅
