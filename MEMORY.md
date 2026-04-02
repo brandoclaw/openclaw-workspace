@@ -93,22 +93,25 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-04-01_
+_Last updated: 2026-04-02_
 
-## Jacob (Sub-Agent — 🎵 Live)
+## Jacob (Sub-Agent — 🎵 Live ✅)
 
 - Isolated agent: `jacob`, workspace: `~/.openclaw/workspace-jacob`
-- **Trigger:** Airtable webhook → `Status` = `Ready to Generate`
-- **Webhook URL:** `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook`
-- **Pipeline:** Airtable prompts → GPT-4o lyrics → Suno (Playwright) → Telegram approval → Drive upload → feedback loop (max 5 iterations)
-- **Approvers:** Brando (TELEGRAM_APPROVER_1) + +14167323117
-- **Services:** ngrok (`com.jacob.ngrok`) + webhook server (`com.jacob.webhook`) — both auto-start on boot via launchd
-- **Credentials:** All pending — drop into `~/.openclaw/workspace-jacob/.env`
+- **Trigger:** Airtable webhook → `Status` = `Paid` (Orders table)
+- **Webhook URL:** `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook` (static ngrok domain)
+- **Pipeline:** Airtable prompts → GPT-4o lyrics → Suno (headed Chrome) → Telegram approval → Drive upload
+- **Approvers:** Brando `8776720992` + Tim `8720480894`
+- **Drive folder:** `songs/` — ID `1ndjRomNL1EGqcvAE-7nJDJC6ad4SlAx2` (Maximus Drive)
+- **Services:** ngrok (`com.jacob.ngrok`) + webhook server (`com.jacob.webhook`) — both auto-start on boot via launchd (port 5055)
+- **Credentials:** All configured in `~/.openclaw/workspace-jacob/.env` ✅
+- **Drive upload:** Confirmed working end-to-end (Apr 1) ✅
+- **First order:** The Thunder (recNcU81XzXqgL9bk) — songs uploaded to Drive Apr 1
+- **Suno session:** `.suno_session.json` — if expired, run `python3 scripts/suno_login.py`
+- **Airtable status field:** Only `Paid` / `Pending Payment` are valid values — Telegram handles all status notifications
+- **Airtable webhook automation:** Confirmed in place as of Apr 2 ✅
+- **Webhook payload format:** Airtable sends `{"recordId": "GDA..."}` — this is the `Order ID` formula field value, NOT the Airtable `rec` ID
+- **Lookup flow:** `webhook_server.py` calls `find_record_by_order_id()` in `airtable_client.py` to resolve GDA... → rec ID, then fetches full record to check Status
+- **Bug fixed Apr 2:** Two issues — (1) `recordId` camelCase wasn't being extracted, (2) Status was read from payload instead of fetched from Airtable API. Both fixed. Pipeline confirmed working end-to-end.
+- **Crash-loop note:** launchd `com.jacob.webhook` will show port 48 errors if server is already running (harmless — real process holds the port fine)
 
-## Recent Activity (Apr 1)
-- Maximus pipeline now produces: one-pager + resume + cover letter + key contacts per role ✅
-- `APPROVE ALL` confirmed as primary approval command
-- Role expiry reduced to 5 business days → auto-archive to Drive
-- Growth agent archived (Mar 29)
-- Ottawa Weekly Issue #4 (`TWITC_Draft_2026-03-20.html`) — marked stale/abandoned (11 days old, no Beehiiv send confirmed) ✅ closed
-- Ottawa Weekly Issue #5 — on Drive, Brando's call to send
