@@ -101,7 +101,7 @@ _Last updated: 2026-04-02_
 - **Trigger:** Airtable webhook → `Status` = `Paid` (Orders table)
 - **Webhook URL:** `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook` (static ngrok domain)
 - **Pipeline:** Airtable prompts → GPT-4o lyrics → Suno (headed Chrome) → Telegram approval → Drive upload
-- **Approvers:** Brando `8776720992` + Tim `8720480894`
+- **Approver:** Tim `8720480894` (sole approver — confirmed Apr 3)
 - **Drive folder:** `songs/` — ID `1ndjRomNL1EGqcvAE-7nJDJC6ad4SlAx2` (Maximus Drive)
 - **Services:** ngrok (`com.jacob.ngrok`) + webhook server (`com.jacob.webhook`) — both auto-start on boot via launchd (port 5055)
 - **Credentials:** All configured in `~/.openclaw/workspace-jacob/.env` ✅
