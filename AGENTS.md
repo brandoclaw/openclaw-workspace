@@ -222,15 +222,10 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 ## Sub-Agent Workflows
 
-### Maximus — Job Search Approval Flow ⏸️ PAUSED as of Mar 31
-1. Maximus posts qualifying roles (target companies only) to Discord at 8 AM EST weekdays
-2. **Primary:** Brando replies `APPROVE ALL` → Maximus runs the full pipeline for every pending role at once. Brando typically batch-approves every 3–5 days, not same-day — Maximus should frame daily posts as a backlog summary, not an urgent action item.
-3. **Single role:** Brando replies `APPROVE [Company]` → runs pipeline for that role only
-4. **Pipeline output per role:** one-pager + tailored resume + cover letter → saved to Drive → key contacts identified
-5. Brando replies `SKIP` → logged, no action
-6. No automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself
-7. Target companies: Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
-8. **Expiry rule:** Roles with no APPROVE or SKIP after 5 business days are automatically archived to the Pending Roles Archive doc in Drive (no action taken, just logged). Maximus handles this as part of the daily job search run.
+### Maximus — Job Search ⏸️ PAUSED as of Mar 31
+- **Cron ID:** `13f32634-517b-481d-a95e-633a4915fff6` (disabled)
+- **To re-enable:** update cron schedule + uncomment in Maximus workspace config
+- This workflow is not operational. Do not treat it as active.
 
 ### Ottawa Weekly — Newsletter Delivery Flow
 1. Agent runs Thursdays 10 AM EST — researches, curates, writes newsletter
@@ -238,6 +233,7 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 3. Posts to TWITC Discord channel (`1480978327945609237`) with filename + top events
 4. Brando opens Drive file, reviews, pastes into Beehiiv, sends manually
 **Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself. Max does not follow up on whether a draft was sent. Draft in Drive = done.
+**Routing note:** Notifications routed via Max bot DM due to @TWITC groupPolicy restriction — see TOOLS.md for details.
 
 ### Weekly Summary Email — Approval Flow
 1. Maximus drafts email every Monday 9 PM EST
@@ -249,12 +245,15 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 2. Jacob fetches order record — reads `ChatGPT Prompt` + `Suno Prompt` formula fields (or builds from template tables if empty)
 3. Sends `ChatGPT Prompt` to GPT-4o → generates full song lyrics
 4. Opens Suno via headed Chrome (`headless=False`) — fills lyrics + style prompt → clicks Create → intercepts generate API response to capture song IDs
-5. Sends both song URLs to Brando + Tim (TELEGRAM_APPROVER_2) via Telegram for approval
+5. Sends both song URLs to Brando (`8776720992`, TELEGRAM_APPROVER_1) + Tim (`8720480894`, TELEGRAM_APPROVER_2) via Telegram for approval
 6. `APPROVE ALL` or `APPROVE 1/2` → downloads MP3s → uploads to Drive `songs/` folder → confirms via Telegram
 7. `REJECT [feedback]` → stores feedback note, stops pipeline (no auto-retry — re-trigger manually by re-saving order as Paid)
 - **Services:** ngrok (`com.jacob.ngrok`) + webhook server (`com.jacob.webhook`) — both auto-start on boot via launchd (port 5055)
 - **Session:** Suno uses saved Playwright session (`.suno_session.json`). If it expires, run `python3 scripts/suno_login.py`
+- **launchd note:** May show exit code 1 on load if services are already running — this is harmless. Real server holds port 5055 fine.
 
-## Make It Yours
+## Known Limitations
 
-This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+- **Daily log cron** — echoes self-review findings without re-verifying state. May re-flag issues that have already been resolved. Treat repeated flags as stale unless manually confirmed.
+- **`openclaw cron run` CLI** — 30s display timeout; job continues in background. A CLI timeout is NOT a failure.
+- **`write` tool sandbox** — restricted to `~/.openclaw/workspace/`. Use `exec` with heredocs for other agent workspaces.

@@ -74,9 +74,13 @@ Skills/tools currently in active use:
 |------|---------|
 | Discord | Primary chat surface (Max + Maximus + @TWITC bots) |
 | Telegram | Secondary surface (Max + Maximus bots) |
-| Google Drive | Maximus candidate docs + Ottawa Weekly drafts |
+| Google Drive | Maximus candidate docs + Ottawa Weekly drafts + Jacob songs |
 | Beehiiv | Ottawa Weekly newsletter delivery |
 | GitHub | Workspace auto-commit (`brandoclaw/openclaw-workspace`) |
+| Airtable | Jacob order trigger (Status = Paid) |
+| Suno | Jacob song generation (headed Chrome via Playwright) |
+| GPT-4o | Jacob lyric generation |
+| ngrok | Jacob webhook relay (static domain, port 5055) |
 
 ## Cross-Bot Routing — @TWITC → Brando
 
