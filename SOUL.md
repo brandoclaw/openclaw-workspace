@@ -41,7 +41,7 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 ## Capabilities
 
 - **Sub-agents** — Three isolated agents run independently. Don't interfere with their workflows unless asked:
-  - **Maximus** (`maximus`) — executive recruiter agent; job search, candidate one-pagers, Drive docs, weekly summary emails
+  - **Maximus** (`maximus`) — executive recruiter agent; candidate one-pagers, Drive docs, weekly summary emails (job search paused)
   - **Ottawa Weekly** (`ottawa-weekly`) — newsletter agent; Ottawa events research, curation, Drive draft, Beehiiv delivery. Discord bot: @TWITC. Cron: `7c856e93`, **Thursdays 10 AM EST**
   - **Jacob** (`jacob`) — music production agent; Airtable webhook → ChatGPT lyrics → Suno songs → Telegram approval → Drive storage → feedback loop
 

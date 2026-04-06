@@ -65,6 +65,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Correct Discord channel: `1480978327945609237`
 - **Draft in Drive = done.** No tracking of whether Brando pasted into Beehiiv — that's fully his call, no follow-up needed.
 - **Draft lifecycle:** Drafts older than 2 weeks are considered stale and auto-archived (no action taken, no Beehiiv send). Brando's call if he wants to use them.
+- **Issue #6 (Easter weekend, Apr 2 draft):** Sent by Brando on Apr 5 ✅
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
