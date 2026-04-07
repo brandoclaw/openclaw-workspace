@@ -25,10 +25,8 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 | Time | Job | ID | Agent | Model |
 |------|-----|----|-------|-------|
-| ~~8 AM weekdays~~ | ~~Maximus Job Search~~ | ~~`13f32634-517b-481d-a95e-633a4915fff6`~~ | ~~maximus~~ | **PAUSED** as of Mar 31 |
 | 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | Sonnet |
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
-| 9 PM **Mondays only** | Weekly Summary Email Draft | `7c704287-6f8d-4c66-86e1-cd0a2de789b6` | maximus | Sonnet |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
 | 10 AM Thursdays | Ottawa Weekly Newsletter | `7c856e93-5661-42f3-bc7e-bba14ab83710` | ottawa-weekly | Sonnet |
 

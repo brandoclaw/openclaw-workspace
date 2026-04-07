@@ -203,8 +203,6 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - ⚠️ `openclaw cron run` CLI has a **30s display timeout** — jobs continue running in the background. A CLI timeout is NOT a failure. Check actual status with `openclaw cron runs --id <id>`.
 - Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
 - Daily log (`8b64061f-daa6-4d21-9581-7616a5a29967`) — 11 PM EST, writes memory/YYYY-MM-DD.md (Haiku)
-- ~~Maximus job search (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays (maximus agent, Haiku)~~ ⏸️ **PAUSED as of Mar 31**
-- Weekly summary email (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays (maximus agent)
 - Ottawa Weekly newsletter (`7c856e93-5661-42f3-bc7e-bba14ab83710`) — Thursdays 10 AM EST (ottawa-weekly agent) — auto-saves HTML to Drive, notifies Brando on Discord
 
 ### 🔄 Memory Maintenance (During Heartbeats)
@@ -234,11 +232,6 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 4. Brando opens Drive file, reviews, pastes into Beehiiv, sends manually
 **Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself. Max does not follow up on whether a draft was sent. Draft in Drive = done.
 **Routing note:** Notifications routed via Max bot DM due to @TWITC groupPolicy restriction — see TOOLS.md for details.
-
-### Weekly Summary Email — Approval Flow
-1. Maximus drafts email every Monday 9 PM EST
-2. Sends to Brando on Telegram for approval
-3. On `APPROVE` → sends to rebarinvestments@gmail.com + d.piazza.13@gmail.com
 
 ### Jacob — Music Production Flow
 1. Airtable `Status` changes to `Paid` → webhook fires to `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook`
