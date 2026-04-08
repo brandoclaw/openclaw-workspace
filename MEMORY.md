@@ -30,23 +30,18 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
 | 10 AM Thursdays | Ottawa Weekly Newsletter | `7c856e93-5661-42f3-bc7e-bba14ab83710` | ottawa-weekly | Sonnet |
 
+**Retired crons (do not recreate):**
+- `13f32634` — Maximus Job Search (retired Apr 7)
+- `7c704287` — Weekly Summary Email (retired Apr 7)
+
 
 ## Maximus (Sub-Agent)
 
 - Isolated agent: `maximus`, workspace: `~/.openclaw/workspace-maximus`
 - Discord bot: `@Maximus` | Telegram bot: `@Maximus_Smithsonian_bot`
 - Google Drive access via `maximus.smithsonian@gmail.com` (gcloud app-default creds, quota project: `project-a517b5a2-329c-4b94-895`)
-- **Job Search cron** (`13f32634-517b-481d-a95e-633a4915fff6`) — 8 AM EST weekdays, searches ONLY the target company list (see below), presents Product Manager, Director, and VP Product roles to Brando on Discord
-- **⚠️ Target companies only** — no roles posted unless from this list (Drive doc `1iyo8O56n3yzl7a6xS3QX31htuRIOeU2nPQeJabhH2VE`):
-  Netflix, Wealthsimple, Google, Shopify, Microsoft, OpenAI, Anthropic, Meta, Amazon, Tesla, SpaceX, Anduril
-- **Weekly Summary Email** (`7c704287-6f8d-4c66-86e1-cd0a2de789b6`) — 9 PM EST Mondays, drafts summary email → Telegram approval → sends to rebarinvestments@gmail.com + d.piazza.13@gmail.com
-- Approval flow: APPROVE [Company] triggers one-pager + tailored resume to Drive + key contact research (no automated LinkedIn outreach — Maximus identifies contacts, Brando reaches out himself)
-- ⚠️ **APPROVE/SKIP decisions are session-volatile** — not tracked in long-term memory. On a fresh session, check recent Maximus Discord posts to see what's pending or already actioned.
-- **`APPROVE ALL`** is the primary command — runs the full pipeline for every pending role at once. `APPROVE [Company]` for single-role approvals.
-- **Expiry rule:** Roles unanswered after 5 business days are auto-archived to the Pending Roles Archive doc in Drive. No action taken — just logged.
-- **Pending Roles Archive Drive doc:** `1Z9j8r1xxUap9nUcMHCP9bbkVZ0EB1KnSPqT89J7TKKo` — created Mar 28, 2026
-- **Approval cadence:** Brando typically batch-approves every 3–5 days via `APPROVE ALL`, not same-day per role. Maximus should frame backlog summaries accordingly.
-- **Netflix scope:** Principal PM roles included (in addition to Director/VP/GPM).
+- **Job Search cron** (`13f32634`) — **retired Apr 7, 2026. Fully removed. Do not recreate.**
+- **Weekly Summary Email cron** (`7c704287`) — **retired Apr 7, 2026. Fully removed. Do not recreate.**
 - First candidate: Brandon Chatreau (Brando himself)
 - Drive structure: `Candidates/brandon chatreau/Opportunities/` and `/Resumes/`
 - Workflows folder in Drive: `1yQ_Mj-ovn2LddvX38GtkhO-s004kZoaR` — master workflow doc lives here
