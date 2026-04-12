@@ -220,15 +220,14 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 ## Sub-Agent Workflows
 
-### Maximus — Job Search ⏸️ PAUSED as of Mar 31
-- **Cron ID:** `13f32634-517b-481d-a95e-633a4915fff6` (disabled)
-- **To re-enable:** update cron schedule + uncomment in Maximus workspace config
-- This workflow is not operational. Do not treat it as active.
+### Maximus — Job Search 🪦 RETIRED as of Apr 7, 2026
+- **Cron ID:** `13f32634` (deleted)
+- Do not recreate.
 
 ### Ottawa Weekly — Newsletter Delivery Flow
 1. Agent runs Thursdays 10 AM EST — researches, curates, writes newsletter
 2. Auto-saves HTML to Google Drive (`local news letter agent/drafts/`)
-3. Posts to TWITC Discord channel (`1480978327945609237`) with filename + top events
+3. Pipeline posts directly to TWITC Discord channel (`1480978327945609237`) with filename + top events — cron delivery is `mode:none`, pipeline handles its own notification
 4. Brando opens Drive file, reviews, pastes into Beehiiv, sends manually
 **Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself. Max does not follow up on whether a draft was sent. Draft in Drive = done.
 **Routing note:** Notifications routed via Max bot DM due to @TWITC groupPolicy restriction — see TOOLS.md for details.
