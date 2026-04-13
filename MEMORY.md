@@ -34,6 +34,10 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - `13f32634` — Maximus Job Search (retired Apr 7)
 - `7c704287` — Weekly Summary Email (retired Apr 7)
 
+**⚠️ Known false positives from self-review cron (ignore permanently):**
+- `5448df10`, `a62cea1a`, `d90dfaa9` — **not in the scheduler**. Confirmed Apr 11 + Apr 13. `removed: false` on all three. Only 4 live jobs exist. Self-review re-flags these from stale output — do not action.
+- **AGENTS.md Maximus P1** — self-review kept flagging Maximus job search section as "reads like live workflow." **Resolved Apr 11** — section now shows 🪦 RETIRED, re-enable instructions removed. If self-review flags this again, it is stale.
+
 
 ## Maximus (Sub-Agent)
 
@@ -59,6 +63,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **Draft in Drive = done.** No tracking of whether Brando pasted into Beehiiv — that's fully his call, no follow-up needed.
 - **Draft lifecycle:** Drafts older than 2 weeks are considered stale and auto-archived (no action taken, no Beehiiv send). Brando's call if he wants to use them.
 - **Issue #6 (Easter weekend, Apr 2 draft):** Sent by Brando on Apr 5 ✅
+- **Issue #7 (Apr 9 draft):** Sent by Brando on Apr 13 ✅
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -87,7 +92,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-04-11_
+_Last updated: 2026-04-13_
 
 ## Jacob (Sub-Agent — 🎵 Live ✅)
 
