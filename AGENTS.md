@@ -230,7 +230,7 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 3. Pipeline posts directly to TWITC Discord channel (`1480978327945609237`) with filename + top events — cron delivery is `mode:none`, pipeline handles its own notification
 4. Brando opens Drive file, reviews, pastes into Beehiiv, sends manually
 **Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself. Max does not follow up on whether a draft was sent. Draft in Drive = done.
-**Routing note:** Notifications routed via Max bot DM due to @TWITC groupPolicy restriction — see TOOLS.md for details.
+**Routing note:** Discord notifications are routed via the Max bot DM (`channel:1477875798206582837`) because @TWITC cannot DM Brando directly due to a `groupPolicy` restriction. @TWITC only posts to the newsletter channel (`1480978327945609237`); all Brando-facing pings come from the Max bot.
 
 ### Jacob — Music Production Flow
 1. Airtable `Status` changes to `Paid` → webhook fires to `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook`

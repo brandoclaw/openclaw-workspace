@@ -46,9 +46,6 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Google Drive access via `maximus.smithsonian@gmail.com` (gcloud app-default creds, quota project: `project-a517b5a2-329c-4b94-895`)
 - **Job Search cron** (`13f32634`) — **retired Apr 7, 2026. Fully removed. Do not recreate.**
 - **Weekly Summary Email cron** (`7c704287`) — **retired Apr 7, 2026. Fully removed. Do not recreate.**
-- First candidate: Brandon Chatreau (Brando himself)
-- Drive structure: `Candidates/brandon chatreau/Opportunities/` and `/Resumes/`
-- Workflows folder in Drive: `1yQ_Mj-ovn2LddvX38GtkhO-s004kZoaR` — master workflow doc lives here
 
 
 
@@ -61,7 +58,6 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Pipeline: auto-saves HTML to Drive (`local news letter agent/drafts/`), notifies Brando on Discord — no approval gate
 - Correct Discord channel: `1480978327945609237`
 - **Draft in Drive = done.** No tracking of whether Brando pasted into Beehiiv — that's fully his call, no follow-up needed.
-- **Draft lifecycle:** Drafts older than 2 weeks are considered stale and auto-archived (no action taken, no Beehiiv send). Brando's call if he wants to use them.
 - **Issue #6 (Easter weekend, Apr 2 draft):** Sent by Brando on Apr 5 ✅
 - **Issue #7 (Apr 9 draft):** Sent by Brando on Apr 13 ✅
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
@@ -92,7 +88,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-04-13_
+_Last updated: 2026-04-23_
 
 ## Jacob (Sub-Agent — 🎵 Live ✅)
 
