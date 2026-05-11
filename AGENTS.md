@@ -68,7 +68,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Anything that leaves the machine
 - Anything you're uncertain about
 
-_Exception: The Weekly Summary Email cron (`7c704287`) sends via Telegram APPROVE gate — this is the approval step, not a separate "ask first." It's exempt._
+_(No active exceptions at this time. Weekly Summary Email cron `7c704287` was retired Apr 7, 2026.)_
 
 ## Group Chats
 

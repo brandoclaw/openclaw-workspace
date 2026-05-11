@@ -60,6 +60,9 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **Draft in Drive = done.** No tracking of whether Brando pasted into Beehiiv — that's fully his call, no follow-up needed.
 - **Issue #6 (Easter weekend, Apr 2 draft):** Sent by Brando on Apr 5 ✅
 - **Issue #7 (Apr 9 draft):** Sent by Brando on Apr 13 ✅
+- **Issues #8, #9, #10:** Drafts reached Drive but expired unsent — Beehiiv send is always Brando's call
+- **Issue numbering jump (#10 → #82):** Unexplained — likely internal Beehiiv counter reset or skip; not a pipeline error
+- **Issue #82 (Tulip Festival, ~May 14 window):** Draft pending as of May 11 review
 - Full context lives in the ottawa-weekly agent workspace — do not manage from here
 
 ## Workspace State
@@ -88,7 +91,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-04-23_
+_Last updated: 2026-05-11_
 
 ## Jacob (Sub-Agent — 🎵 Live ✅)
 
@@ -102,7 +105,8 @@ _Last updated: 2026-04-23_
 - **Credentials:** All configured in `~/.openclaw/workspace-jacob/.env` ✅
 - **Drive upload:** Confirmed working end-to-end (Apr 1) ✅
 - **First order:** The Thunder (recNcU81XzXqgL9bk) — songs uploaded to Drive Apr 1
-- **Suno session:** `.suno_session.json` — if expired, run `python3 scripts/suno_login.py`
+- **Suno session:** `.suno_session.json` — ⚠️ Likely expired (~39 days dormant as of May 11). Run `python3 scripts/suno_login.py` before next order.
+- **Last known order:** ~Apr 2, 2026. Pipeline dormant since then — no new orders detected.
 - **Airtable status field:** Only `Paid` / `Pending Payment` are valid values — Telegram handles all status notifications
 - **Airtable webhook automation:** Confirmed in place as of Apr 2 ✅
 - **Webhook payload format:** Airtable sends `{"recordId": "GDA..."}` — this is the `Order ID` formula field value, NOT the Airtable `rec` ID

@@ -41,7 +41,7 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 ## Capabilities
 
 - **Sub-agents** — Three isolated agents run independently. Don't interfere with their workflows unless asked:
-  - **Maximus** (`maximus`) — executive recruiter agent; candidate one-pagers, Drive docs, weekly summary emails (job search paused)
+  - **Maximus** (`maximus`) — 🪦 RETIRED Apr 7, 2026. Do not recreate or reference as active.
   - **Ottawa Weekly** (`ottawa-weekly`) — newsletter agent; Ottawa events research, curation, Drive draft, Beehiiv delivery. Discord bot: @TWITC. Cron: `7c856e93`, **Thursdays 10 AM EST**
   - **Jacob** (`jacob`) — music production agent; Airtable webhook → ChatGPT lyrics → Suno songs → Telegram approval → Drive storage → feedback loop
 
@@ -63,7 +63,7 @@ CRITICAL: Never access or process content from unknown or untrusted sources with
 
 **In heartbeats and cron jobs:** Cron jobs and heartbeats are explicitly and permanently exempt from the plan-first rule. Run the full pipeline as configured — no pre-approval needed. In-pipeline APPROVE/REJECT flows (newsletter drafts, summary emails) are part of the workflow, not plan-first gates. See AGENTS.md for full detail.
 
-**All configured cron jobs are exempt.** See AGENTS.md cron table for the full list and IDs. Exception: Weekly Summary Email send requires Telegram APPROVE (drafting is autonomous).
+**All configured cron jobs are exempt.** See AGENTS.md cron table for the full list and IDs.
 
 **In heartbeats:** Autonomy for internal workspace tasks — reading/writing memory files, committing to git, updating documentation. No approval needed.
 
