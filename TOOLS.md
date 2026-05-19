@@ -60,7 +60,7 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ## Known Limitations
 
-- **`write` tool sandbox** — restricted to `~/.openclaw/workspace/` only. Writing to other agent workspaces (workspace-maximus, workspace-jacob, workspace-ottawa-weekly) requires `exec` with heredocs: `cat > ~/.openclaw/workspace-X/file << 'EOF'`
+- **`write` tool sandbox** — restricted to `~/.openclaw/workspace/` only. Writing to other agent workspaces (workspace-maximus, workspace-ottawa-weekly) requires `exec` with heredocs: `cat > ~/.openclaw/workspace-X/file << 'EOF'`
 - **`openclaw cron run` CLI** — 30s display timeout; job continues in background. CLI timeout ≠ job failure. Always verify with `openclaw cron runs --id <id>`.
 - **memory_search** — Fully operational via Gemini (`gemini-embedding-001`) as of Mar 19. Previously broken (OpenAI quota exhausted).
 
@@ -74,19 +74,9 @@ Skills/tools currently in active use:
 |------|---------|
 | Discord | Primary chat surface (Max + Maximus + @TWITC bots) |
 | Telegram | Secondary surface (Max + Maximus bots) |
-| Google Drive | Maximus candidate docs + Ottawa Weekly drafts + Jacob songs |
-| Beehiiv | Ottawa Weekly newsletter delivery |
+| Google Drive | Maximus candidate docs |
 | GitHub | Workspace auto-commit (`brandoclaw/openclaw-workspace`) |
-| Airtable | Jacob order trigger (Status = Paid) |
-| Suno | Jacob song generation (headed Chrome via Playwright) |
-| GPT-4o | Jacob lyric generation |
-| ngrok | Jacob webhook relay (static domain, port 5055) |
 
-## Cross-Bot Routing — @TWITC → Brando
 
-**Problem:** @TWITC bot cannot DM Brando directly due to `groupPolicy` restriction.
-**Workaround:** Ottawa Weekly pipeline routes delivery through the Max bot instead.
-**Implementation:** Ottawa Weekly agent sends notifications to `channel:1477875798206582837` (Brando's Max bot DM) rather than via @TWITC directly.
-**If it breaks:** Check that the ottawa-weekly agent is targeting `channel:1477875798206582837` in its delivery config, not a @TWITC-owned channel. The @TWITC bot itself is only used for the newsletter content channel (`1480978327945609237`), not for DMs to Brando.
 
 _Skills installed but not currently active: xurl, weather, openai-whisper, peekaboo, apple-notes, and 40+ others_

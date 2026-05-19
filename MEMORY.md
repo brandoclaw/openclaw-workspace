@@ -28,7 +28,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | Sonnet |
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
-| 10 AM Thursdays | Ottawa Weekly Newsletter | `7c856e93-5661-42f3-bc7e-bba14ab83710` | ottawa-weekly | Sonnet |
+| 10 AM Thursdays | ~~Ottawa Weekly Newsletter~~ | ~~`7c856e93`~~ | retired | — |
 
 **Retired crons (do not recreate):**
 - `13f32634` — Maximus Job Search (retired Apr 7)
@@ -49,21 +49,9 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 
 
-## Ottawa Weekly (Sub-Agent — Live ✅)
+## Ottawa Weekly (Sub-Agent — 🪦 RETIRED as of May 19, 2026)
 
-- Isolated agent: `ottawa-weekly`, workspace: `~/.openclaw/workspace-ottawa-weekly`
-- Discord bot: `@TWITC` — delivers to Brando via TWITC Discord channel ✅
-- Cron: `7c856e93` — **Thursdays 10 AM EST**
-- First live run: Thursday March 13, 2026 ✅
-- Pipeline: auto-saves HTML to Drive (`local news letter agent/drafts/`), notifies Brando on Discord — no approval gate
-- Correct Discord channel: `1480978327945609237`
-- **Draft in Drive = done.** No tracking of whether Brando pasted into Beehiiv — that's fully his call, no follow-up needed.
-- **Issue #6 (Easter weekend, Apr 2 draft):** Sent by Brando on Apr 5 ✅
-- **Issue #7 (Apr 9 draft):** Sent by Brando on Apr 13 ✅
-- **Issues #8, #9, #10:** Drafts reached Drive but expired unsent — Beehiiv send is always Brando's call
-- **Issue numbering jump (#10 → #82):** Unexplained — likely internal Beehiiv counter reset or skip; not a pipeline error
-- **Issue #82 (Tulip Festival, ~May 14 window):** Draft pending as of May 11 review
-- Full context lives in the ottawa-weekly agent workspace — do not manage from here
+- Cron `7c856e93` deleted. Agent workspace removed. Do not recreate.
 
 ## Workspace State
 
@@ -91,26 +79,9 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-05-11_
+_Last updated: 2026-05-19 (Jacob + Ottawa Weekly retired)_
 
-## Jacob (Sub-Agent — 🎵 Live ✅)
+## Jacob (Sub-Agent — 🪦 RETIRED as of May 19, 2026)
 
-- Isolated agent: `jacob`, workspace: `~/.openclaw/workspace-jacob`
-- **Trigger:** Airtable webhook → `Status` = `Paid` (Orders table)
-- **Webhook URL:** `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook` (static ngrok domain)
-- **Pipeline:** Airtable prompts → GPT-4o lyrics → Suno (headed Chrome) → Telegram approval → Drive upload
-- **Approvers:** Brando `8776720992` + Tim `8720480894` (both receive approval pings)
-- **Drive folder:** `songs/` — ID `1ndjRomNL1EGqcvAE-7nJDJC6ad4SlAx2` (Maximus Drive)
-- **Services:** ngrok (`com.jacob.ngrok`) + webhook server (`com.jacob.webhook`) — both auto-start on boot via launchd (port 5055)
-- **Credentials:** All configured in `~/.openclaw/workspace-jacob/.env` ✅
-- **Drive upload:** Confirmed working end-to-end (Apr 1) ✅
-- **First order:** The Thunder (recNcU81XzXqgL9bk) — songs uploaded to Drive Apr 1
-- **Suno session:** `.suno_session.json` — ⚠️ Likely expired (~39 days dormant as of May 11). Run `python3 scripts/suno_login.py` before next order.
-- **Last known order:** ~Apr 2, 2026. Pipeline dormant since then — no new orders detected.
-- **Airtable status field:** Only `Paid` / `Pending Payment` are valid values — Telegram handles all status notifications
-- **Airtable webhook automation:** Confirmed in place as of Apr 2 ✅
-- **Webhook payload format:** Airtable sends `{"recordId": "GDA..."}` — this is the `Order ID` formula field value, NOT the Airtable `rec` ID
-- **Lookup flow:** `webhook_server.py` calls `find_record_by_order_id()` in `airtable_client.py` to resolve GDA... → rec ID, then fetches full record to check Status
-- **Bug fixed Apr 2:** Two issues — (1) `recordId` camelCase wasn't being extracted, (2) Status was read from payload instead of fetched from Airtable API. Both fixed. Pipeline confirmed working end-to-end.
-- **Crash-loop note:** launchd `com.jacob.webhook` will show port 48 errors if server is already running (harmless — real process holds the port fine)
+- Fully removed. Do not recreate.
 

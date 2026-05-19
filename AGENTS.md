@@ -203,7 +203,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - ⚠️ `openclaw cron run` CLI has a **30s display timeout** — jobs continue running in the background. A CLI timeout is NOT a failure. Check actual status with `openclaw cron runs --id <id>`.
 - Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
 - Daily log (`8b64061f-daa6-4d21-9581-7616a5a29967`) — 11 PM EST, writes memory/YYYY-MM-DD.md (Haiku)
-- Ottawa Weekly newsletter (`7c856e93-5661-42f3-bc7e-bba14ab83710`) — Thursdays 10 AM EST (ottawa-weekly agent) — auto-saves HTML to Drive, notifies Brando on Discord
+- ~~Ottawa Weekly newsletter (`7c856e93`)~~ — **retired May 19, 2026**
 
 ### 🔄 Memory Maintenance (During Heartbeats)
 
@@ -224,25 +224,12 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 - **Cron ID:** `13f32634` (deleted)
 - Do not recreate.
 
-### Ottawa Weekly — Newsletter Delivery Flow
-1. Agent runs Thursdays 10 AM EST — researches, curates, writes newsletter
-2. Auto-saves HTML to Google Drive (`local news letter agent/drafts/`)
-3. Pipeline posts directly to TWITC Discord channel (`1480978327945609237`) with filename + top events — cron delivery is `mode:none`, pipeline handles its own notification
-4. Brando opens Drive file, reviews, pastes into Beehiiv, sends manually
-**Note:** "No approval gate" means steps 1–3 are fully automated. Beehiiv send is always manual — Brando does it himself. Max does not follow up on whether a draft was sent. Draft in Drive = done.
-**Routing note:** Discord notifications are routed via the Max bot DM (`channel:1477875798206582837`) because @TWITC cannot DM Brando directly due to a `groupPolicy` restriction. @TWITC only posts to the newsletter channel (`1480978327945609237`); all Brando-facing pings come from the Max bot.
+### Ottawa Weekly — Newsletter Delivery Flow 🪦 RETIRED as of May 19, 2026
+- Cron `7c856e93` deleted. Agent workspace removed. Do not recreate.
 
-### Jacob — Music Production Flow
-1. Airtable `Status` changes to `Paid` → webhook fires to `https://subclavate-deacon-isogeothermic.ngrok-free.dev/webhook`
-2. Jacob fetches order record — reads `ChatGPT Prompt` + `Suno Prompt` formula fields (or builds from template tables if empty)
-3. Sends `ChatGPT Prompt` to GPT-4o → generates full song lyrics
-4. Opens Suno via headed Chrome (`headless=False`) — fills lyrics + style prompt → clicks Create → intercepts generate API response to capture song IDs
-5. Sends both song URLs to Brando (`8776720992`, TELEGRAM_APPROVER_1) + Tim (`8720480894`, TELEGRAM_APPROVER_2) via Telegram for approval
-6. `APPROVE ALL` or `APPROVE 1/2` → downloads MP3s → uploads to Drive `songs/` folder → confirms via Telegram
-7. `REJECT [feedback]` → stores feedback note, stops pipeline (no auto-retry — re-trigger manually by re-saving order as Paid)
-- **Services:** ngrok (`com.jacob.ngrok`) + webhook server (`com.jacob.webhook`) — both auto-start on boot via launchd (port 5055)
-- **Session:** Suno uses saved Playwright session (`.suno_session.json`). If it expires, run `python3 scripts/suno_login.py`
-- **launchd note:** May show exit code 1 on load if services are already running — this is harmless. Real server holds port 5055 fine.
+### Jacob — Music Production Flow 🪦 RETIRED as of May 19, 2026
+- **Agent ID:** `jacob` (retired)
+- Do not recreate.
 
 ## Known Limitations
 
