@@ -66,6 +66,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **memory_search** — powered by Gemini (`gemini-embedding-001`). Fully operational as of Mar 19.
 - **`write` tool sandbox** — sandboxed to `~/.openclaw/workspace` only. For other agent workspaces, use `exec` with heredocs (`cat > file << 'EOF'`).
 - **`openclaw cron run` CLI** — has a 30s display timeout; jobs continue running in background. A timeout message from the CLI is NOT a failure indicator — check `openclaw cron runs --id <id>` to verify actual status.
+- **Delivery false-error pattern** — `⚠️ ✉️ Message failed` + `delivered: true` = delivery actually succeeded. This is a gateway quirk, not a real failure.
 - **@TWITC bot DMs** — `groupPolicy` restriction prevents @TWITC from DMing Brando directly. Cross-bot routing (via Max bot) is the only workaround.
 - **`channels.discord.accounts.*` allowlist key** — NOT supported; crashes the gateway. Do not attempt to restrict bot DMs via allowlist config. Cross-bot routing is the only workaround for restricted DMs.
 
@@ -79,7 +80,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-05-19 (Jacob + Ottawa Weekly retired)_
+_Last updated: 2026-06-03 (SOUL.md cleaned up, delivery false-error pattern documented)_
 
 ## Jacob (Sub-Agent — 🪦 RETIRED as of May 19, 2026)
 
