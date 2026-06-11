@@ -72,11 +72,10 @@ Skills/tools currently in active use:
 
 | Tool | Purpose |
 |------|---------|
-| Discord | Primary chat surface (Max + Maximus + @TWITC bots) |
-| Telegram | Secondary surface (Max + Maximus bots) |
-| Google Drive | Maximus candidate docs |
+| Discord | Primary chat surface (Max + @TWITC bots) |
+| Telegram | Secondary surface (Max bot) |
 | GitHub | Workspace auto-commit (`brandoclaw/openclaw-workspace`) |
 
 
 
-_Skills installed but not currently active: xurl, weather, openai-whisper, peekaboo, apple-notes, and 40+ others_
+_Skills installed but not currently active: xurl, weather, openai-whisper, peekaboo, apple-notes, and 55+ others_

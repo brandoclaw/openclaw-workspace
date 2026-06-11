@@ -18,7 +18,6 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - Set up on Discord (DM + server channels) and Telegram
 - Identity established: Max, ghost in the machine, sharp/direct, 😏
 - Emoji: 😏 (IDENTITY.md is the source of truth)
-- Google Drive: accessed via Maximus's credentials (maximus.smithsonian@gmail.com) when needed — no separate Drive setup for Max
 - Avatar: none, text-based identity only
 
 ## Cron Jobs
@@ -28,8 +27,6 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | Sonnet |
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
-| 10 AM Thursdays | ~~Ottawa Weekly Newsletter~~ | ~~`7c856e93`~~ | retired | — |
-
 **Retired crons (do not recreate):**
 - `13f32634` — Maximus Job Search (retired Apr 7)
 - `7c704287` — Weekly Summary Email (retired Apr 7)
@@ -39,13 +36,9 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - **AGENTS.md Maximus P1** — self-review kept flagging Maximus job search section as "reads like live workflow." **Resolved Apr 11** — section now shows 🪦 RETIRED, re-enable instructions removed. If self-review flags this again, it is stale.
 
 
-## Maximus (Sub-Agent)
+## Maximus (Sub-Agent — 🪦 RETIRED as of Apr 7, 2026)
 
-- Isolated agent: `maximus`, workspace: `~/.openclaw/workspace-maximus`
-- Discord bot: `@Maximus` | Telegram bot: `@Maximus_Smithsonian_bot`
-- Google Drive access via `maximus.smithsonian@gmail.com` (gcloud app-default creds, quota project: `project-a517b5a2-329c-4b94-895`)
-- **Job Search cron** (`13f32634`) — **retired Apr 7, 2026. Fully removed. Do not recreate.**
-- **Weekly Summary Email cron** (`7c704287`) — **retired Apr 7, 2026. Fully removed. Do not recreate.**
+- Fully removed. Do not recreate.
 
 
 
@@ -59,7 +52,6 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - TOOLS.md populated with CLI and Discord config
 - Daily logs active (memory/YYYY-MM-DD.md)
 - GitHub: `brandoclaw/openclaw-workspace`
-- Google Drive access is Maximus-specific (`maximus.smithsonian@gmail.com`) — Max does not need separate Drive integration
 
 ## Known Limitations
 
@@ -80,7 +72,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-06-03 (SOUL.md cleaned up, delivery false-error pattern documented)_
+_Last updated: 2026-06-11 (trimmed Maximus section, removed stale Drive refs, cleaned cron table)_
 
 ## Jacob (Sub-Agent — 🪦 RETIRED as of May 19, 2026)
 
