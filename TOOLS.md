@@ -60,7 +60,7 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ## Known Limitations
 
-- **`write` tool sandbox** — restricted to `~/.openclaw/workspace/` only. Writing to other agent workspaces (workspace-maximus, workspace-ottawa-weekly) requires `exec` with heredocs: `cat > ~/.openclaw/workspace-X/file << 'EOF'`
+- **`write` tool sandbox** — restricted to `~/.openclaw/workspace/` only. For files outside this path, use `exec` with heredocs: `cat > /path/to/file << 'EOF'`
 - **`openclaw cron run` CLI** — 30s display timeout; job continues in background. CLI timeout ≠ job failure. Always verify with `openclaw cron runs --id <id>`.
 - **memory_search** — Fully operational via Gemini (`gemini-embedding-001`) as of Mar 19. Previously broken (OpenAI quota exhausted).
 
@@ -78,4 +78,4 @@ Skills/tools currently in active use:
 
 
 
-_Skills installed but not currently active: xurl, weather, openai-whisper, peekaboo, apple-notes, and 55+ others_
+_Skills available but not loaded by default: xurl, weather, openai-whisper, peekaboo, apple-notes, and many others (53 total installed)_
