@@ -78,4 +78,6 @@ Skills/tools currently in active use:
 
 
 
-_Skills available but not loaded by default: xurl, weather, openai-whisper, peekaboo, apple-notes, and many others (53 total installed)_
+_53 skills installed total. 16 are active/surfaced per session (including xurl, weather, openai-whisper, peekaboo, apple-notes). The remaining 37 are installed but not exposed — ask to enable any._
+
+_Inactive/orphaned: `sag` (ElevenLabs TTS CLI) — installed globally, not surfaced, not configured. Jacob-era relic. ElevenLabs API key is live if you want to surface it._

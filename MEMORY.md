@@ -72,7 +72,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-06-11 (trimmed Maximus section, removed stale Drive refs, cleaned cron table)_
+_Last updated: 2026-06-25 (TOOLS.md skills line fixed, sag documented, MEMORY.md refreshed)_
 
 ## Jacob (Sub-Agent — 🪦 RETIRED as of May 19, 2026)
 
