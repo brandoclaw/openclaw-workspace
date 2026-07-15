@@ -24,12 +24,13 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 
 | Time | Job | ID | Agent | Model |
 |------|-----|----|-------|-------|
-| 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | Sonnet |
+| 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | default |
 | Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
 **Retired crons (do not recreate):**
 - `13f32634` — Maximus Job Search (retired Apr 7)
 - `7c704287` — Weekly Summary Email (retired Apr 7)
+- `7c856e93` — Ottawa Weekly Newsletter (retired May 19)
 
 **⚠️ Known false positives from self-review cron (ignore permanently):**
 - `5448df10`, `a62cea1a`, `d90dfaa9` — **not in the scheduler**. Confirmed Apr 11 + Apr 13. `removed: false` on all three. Only 4 live jobs exist. Self-review re-flags these from stale output — do not action.
@@ -72,7 +73,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-06-25 (TOOLS.md skills line fixed, sag documented, MEMORY.md refreshed)_
+_Last updated: 2026-07-14 (added Ottawa Weekly to retired crons, IDENTITY.md refreshed)_
 
 ## Jacob (Sub-Agent — 🪦 RETIRED as of May 19, 2026)
 
