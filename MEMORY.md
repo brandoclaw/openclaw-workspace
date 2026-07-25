@@ -25,7 +25,7 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 | Time | Job | ID | Agent | Model |
 |------|-----|----|-------|-------|
 | 9 AM daily | Daily Self-Review | `fba196ad-1039-4b51-8ea8-f46d1033e057` | main | default |
-| Every 3 hours | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
+| Daily at midnight EST | Workspace Auto-Commit | `ec1c9869-133b-4237-9347-8f1756409008` | main | Haiku |
 | 11 PM daily | Daily Log | `8b64061f-daa6-4d21-9581-7616a5a29967` | main | Haiku |
 **Retired crons (do not recreate):**
 - `13f32634` — Maximus Job Search (retired Apr 7)
