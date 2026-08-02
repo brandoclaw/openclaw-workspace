@@ -197,7 +197,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **Background automation running:**
 
-- Every-3-hour workspace auto-commit (`ec1c9869-133b-4237-9347-8f1756409008`) — Haiku model, commits + pushes to `brandoclaw/openclaw-workspace`
+- Daily midnight EST workspace auto-commit (`ec1c9869-133b-4237-9347-8f1756409008`) — Haiku model, commits + pushes to `brandoclaw/openclaw-workspace`
 - ⚠️ `openclaw cron run` CLI has a **30s display timeout** — jobs continue running in the background. A CLI timeout is NOT a failure. Check actual status with `openclaw cron runs --id <id>`.
 - Daily self-review (`fba196ad-1039-4b51-8ea8-f46d1033e057`) — 9 AM EST, reviews core files, delivers report to Discord DM + Telegram
 - Daily log (`8b64061f-daa6-4d21-9581-7616a5a29967`) — 11 PM EST, writes memory/YYYY-MM-DD.md (Haiku)

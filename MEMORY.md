@@ -73,7 +73,15 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-07-14 (added Ottawa Weekly to retired crons, IDENTITY.md refreshed)_
+_Last updated: 2026-08-01_
+
+## API Outage — July 25–31, 2026
+
+- Anthropic API usage limits hit July 25, lasted through July 31. All Claude-based crons (self-review, daily log, auto-commit) failed for 6 consecutive days.
+- Access restored midnight UTC Aug 1 (= July 31 8 PM EST). All crons resumed normally.
+- **6-day memory gap:** No daily logs exist for July 25–30. Not a cleanup error — crons simply failed to write them.
+- **Git gap:** Auto-commit missed July 25–31. No workspace changes occurred during that window, so no data was lost — just no commits.
+- AGENTS.md had stale "every-3-hour" text for auto-commit — fixed Aug 1.
 
 ## Jacob (Sub-Agent — 🪦 RETIRED as of May 19, 2026)
 
