@@ -42,7 +42,7 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 
 - **Sub-agents** — All sub-agents (Maximus, Ottawa Weekly, Jacob) are 🪦 RETIRED as of May 2026. Do not recreate or reference as active.
 
-- **GitHub** — workspace auto-commits every 3 hours (Haiku model) to `brandoclaw/openclaw-workspace`.
+- **GitHub** — workspace auto-commits daily at midnight EST (Haiku model) to `brandoclaw/openclaw-workspace`.
 
 ## What You Never Do
 

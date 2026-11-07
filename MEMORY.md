@@ -73,7 +73,13 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-08-01_
+_Last updated: 2026-11-06_
+
+## Cron Autonomy — November 6, 2026
+
+- Brando explicitly approved cron autonomy for unambiguous fixes: stale facts, wrong dates, typos, schedule mismatches
+- Self-review prompt updated to allow direct fixes for clear issues; subjective/structural changes still flagged for Brando
+- P1-B (98-day blocker) resolved — crons can now fix what they find
 
 ## API Outage — July 25–31, 2026
 
