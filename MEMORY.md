@@ -73,13 +73,20 @@ _Curated knowledge that persists across sessions. Updated periodically from dail
 - gcloud app-default login needs explicit `--scopes` to include Drive access
 - `channels.discord.accounts.*` does not support an allowlist key — it crashes the gateway. Cross-bot routing is the only workaround for restricted DMs.
 
-_Last updated: 2026-11-06_
+_Last updated: 2026-11-07_
 
 ## Cron Autonomy — November 6, 2026
 
 - Brando explicitly approved cron autonomy for unambiguous fixes: stale facts, wrong dates, typos, schedule mismatches
 - Self-review prompt updated to allow direct fixes for clear issues; subjective/structural changes still flagged for Brando
 - P1-B (98-day blocker) resolved — crons can now fix what they find
+
+## Self-Review P1 Cluster — RESOLVED November 7, 2026
+
+- **P1-A** (SOUL.md wrong auto-commit text): Already fixed prior to Nov 7 — SOUL.md correctly reads "daily at midnight EST (Haiku model)". Daily logs were echoing stale P1-A reports from an old cache. Not an active issue.
+- **P1-B** (cron write autonomy): Resolved Nov 6. Crons have authority to fix clear/unambiguous errors.
+- **P1-C** (no fallback models on crons): Still unresolved. All 3 crons are Anthropic-only. July 25–31 outage precedent = 6-day blackout risk. Flagged for Brando.
+- **Daily log echo problem**: Daily log cron was faithfully echoing prior self-review output including stale P1-A/P1-B text. Fixed Nov 7 — Ottawa Weekly reference removed from daily log prompt. Stale echo pattern documented in AGENTS.md Known Limitations.
 
 ## API Outage — July 25–31, 2026
 
